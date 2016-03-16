@@ -9,6 +9,7 @@
  * @author Irfandi
  */
 public class Main {
+
     public static void main(String[] args) {
         Database db = new Database();
         System.out.println("db.get() // mengambil semua data");
@@ -16,6 +17,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("db.get(104) // mengambil data dengan id=104");
         db.get(104);
-
+        System.out.println("\n");
+        System.out.println("db.get(\"Gaji Pokok, 2000) // mengambil semua data yang memiliki gajiPokok = 2000");
+        db.get("Gaji Pokok",2000);
     }
 }

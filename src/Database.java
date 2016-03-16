@@ -36,5 +36,49 @@ public class Database {
         System.out.println("---------------------------------------------------------------");
     }
 
+    public void get(String kolom, int target_value) {
+        int result_count = 0;
+        print_coloumn();
+        if (kolom.equals("Gaji Pokok")) {
+            for (int y = 0; y < jumlah_data; y++) {
+                if (target_value == gaji_pokok[y]) {
+                    System.out.println(nik[y] + "\t" + nama[y] + "\t  " + gaji_pokok[y] + "\t\t" + tunjangan[y] + "\t\t" + bonus[y] + "\t" + denda[y]);
+                    result_count++;
+                }
+            }
+            System.out.println("---------------------------------------------------------------");
+        } else if (kolom.equals("Tunjangan")) {
+            for (int y = 0; y < jumlah_data; y++) {
+                if (target_value == tunjangan[y]) {
+                    System.out.println(nik[y] + "\t" + nama[y] + "\t  " + gaji_pokok[y] + "\t\t" + tunjangan[y] + "\t\t" + bonus[y] + "\t" + denda[y]);
+                    result_count++;
+                }
+            }
+            System.out.println("---------------------------------------------------------------");
+        } else if (kolom.equals("Bonus")) {
+            for (int y = 0; y < jumlah_data; y++) {
+                if (target_value == bonus[y]) {
+                    System.out.println(nik[y] + "\t" + nama[y] + "\t  " + gaji_pokok[y] + "\t\t" + tunjangan[y] + "\t\t" + bonus[y] + "\t" + denda[y]);
+                    result_count++;
+                }
+            }
+            System.out.println("---------------------------------------------------------------");
+        } else if (kolom.equals("Denda")) {
+            for (int y = 0; y < jumlah_data; y++) {
+                if (target_value == denda[y]) {
+                    System.out.println(nik[y] + "\t" + nama[y] + "\t  " + gaji_pokok[y] + "\t\t" + tunjangan[y] + "\t\t" + bonus[y] + "\t" + denda[y]);
+                    result_count++;
+                }
+            }
+            System.out.println("---------------------------------------------------------------");
+        } else {
+            System.out.println("Kolom tidak ditemukan!");
+            System.out.println("---------------------------------------------------------------");
+        }
 
+        if (result_count == 0) {
+            System.out.println("\tMaaf data tidak ditemukan!");
+            System.out.println("---------------------------------------------------------------");
+        }
+    }
 }
