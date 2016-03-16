@@ -7,4 +7,34 @@ public class Database {
     private final int tunjangan[] = {1000, 900, 1000, 750, 850, 350, 1000, 1250, 1000, 1000};
     private final int bonus[] = {500, 500, 300, 600, 500, 450, 500, 500, 500, 200};
     private final int denda[] = {200, 200, 375, 200, 300, 250, 200, 300, 200, 200};
+    int jumlah_data = nik.length;
+
+    public void print_coloumn() {
+        System.out.println("---------------------------------------------------------------");
+        System.out.println("NIK\tNama\t  Gaji Pokok\tTunjangan\tBonus\tDenda");
+        System.out.println("---------------------------------------------------------------");
+    }
+
+    public void get() {
+        print_coloumn();
+        for (int z = 0; z < jumlah_data; z++) {
+            System.out.println(nik[z] + "\t" + nama[z] + "\t  " + gaji_pokok[z] + "\t\t" + tunjangan[z] + "\t\t" + bonus[z] + "\t" + denda[z]);
+        }
+        System.out.println("---------------------------------------------------------------");
+    }
+
+    public void get(int NIK) {
+        int index = 999;
+        for (int y = 0; y < jumlah_data; y++) {
+            if (NIK == nik[y]) {
+                index = y;
+                break;
+            }
+        }
+        print_coloumn();
+        System.out.println(nik[index] + "\t" + nama[index] + "\t  " + gaji_pokok[index] + "\t\t" + tunjangan[index] + "\t\t" + bonus[index] + "\t" + denda[index]);
+        System.out.println("---------------------------------------------------------------");
+    }
+
+
 }
