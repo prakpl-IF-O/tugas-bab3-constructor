@@ -20,5 +20,11 @@ public class Main {
         System.out.println("\n");
         System.out.println("db.get(\"Gaji Pokok, 2000) // mengambil semua data yang memiliki gajiPokok = 2000");
         db.get("Gaji Pokok",2000);
+        System.out.println("\n");
+        System.out.println("db.get(\"tunjangan, \"<=\", 1000) // mengambil semua data yang memiliki tunjangan <= 1000");
+        db.get("Tunjangan", "<=", 1000);
+        System.out.println("\n");
+        System.out.println("db.get(\"bonus\", \">\", 450) // mengambil semua data yang memiliki bonus > 450");
+        db.get("Bonus", ">", 450);
     }
 }
