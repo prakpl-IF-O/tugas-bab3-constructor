@@ -11,8 +11,8 @@ public class Database {
     }
 
     public Database(Data a) {
-
         data.add(a);
+        count1++;
     }
 
     public void inputData(Data... a) {
