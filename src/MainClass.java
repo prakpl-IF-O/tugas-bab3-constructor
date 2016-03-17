@@ -14,31 +14,25 @@ public class MainClass {
         Data d10 = new Data(110,"Harry",2250,1000,200,200);
         Database db = new Database();
         db.inputData(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10);
-        System.out.println("get()");
+        System.out.println("Method db.get() Mengambl semua data dari database");
         db.get();
-        System.out.println("==============");
-        System.out.println("");
-        System.out.println("get(int id)");
-        db.get(101);
-        db.get(105);
-        System.out.println("");
-        System.out.println("==============");
-        System.out.println("get(String na,int val");
+        System.out.println("-----------------------------------------");
+        System.out.println("Method db.get(int id) Mengambil data nik tertentu");
+        System.out.println("db.get(102)");
+        db.get(102);
+        System.out.println("db.get(110)");
+        db.get(110);
+        System.out.println("-----------------------------------------");
+        System.out.println("Method db.get(String columnName, Object Value) Mengambil semua data dengan nilai column name = value");
+        System.out.println("db.get(\"Gaji Pokok\", 2000) ");
         db.get("Gaji Pokok",2000);
-        db.get("tunjangan",1000);
-        db.get("Bonus",500);
-        db.get("Denda",375);
-        System.out.println("");
-        System.out.println("==============");
-        System.out.println("get(String na, String o, int val");
-        db.get("gaji Pokok","<",2000);
-        db.get("Tunjangan",">",900);
-        db.get("bonus","<=",450);
-        db.get("denda",">=",300);
-        
-        
-        System.out.println("==============");
-        
-        
+        System.out.println("db.get(\"Tunjangan\", 1000) ");
+        db.get("Tunjangan",1000);
+        System.out.println("-----------------------------------------");
+        System.out.println("Method db.get(String columnName,String operator, Object Value)  Mengambil semua data dengan nilai column name operator value");
+        System.out.println("db.get(\"Bonus\", \">\", 450)");
+        db.get("Bonus",">",450);
+        System.out.println("db.get(\"Denda\", \"<=\", 250)");
+        db.get("Denda","<=",250);
     }
 }

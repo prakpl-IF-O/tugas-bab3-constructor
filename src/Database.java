@@ -43,7 +43,7 @@ public class Database {
 
     public Database get(String n, int v) {
         Database s = new Database();
-        count2=0;
+        count2 = 0;
         for (Data d : data) {
             if (n.equalsIgnoreCase("Tunjangan")) {
                 if (v == d.getTunjangan()) {
@@ -69,12 +69,13 @@ public class Database {
         }
         s.displayData();
         System.out.println("Jumlah Data : " + count2);
+        System.out.println("-------------------------");
         return s;
     }
 
     public Database get(String n, String o, int v) {
         Database s = new Database();
-        count2=0;
+        count2 = 0;
         for (Data d : data) {
             if (o.equalsIgnoreCase("<")) {
                 if (n.equalsIgnoreCase("Tunjangan")) {
@@ -182,19 +183,20 @@ public class Database {
             }
         }
         s.displayData();
-        System.out.println("Jumlah Data : "+count2);
+        System.out.println("Jumlah Data : " + count2);
+        System.out.println("-------------------------");
         return s;
     }
 
     private void displayData() {
 
         for (Data d : data) {
-            System.out.println("NIK : " + d.getNik());
-            System.out.println("Nama : " + d.getNama());
+            System.out.println("NIK        : " + d.getNik());
+            System.out.println("Nama       : " + d.getNama());
             System.out.println("Gaji Pokok : " + d.getGaji());
-            System.out.println("Tunjangan : " + d.getTunjangan());
-            System.out.println("Bonus : " + d.getBonus());
-            System.out.println("Denda : " + d.getDenda());
+            System.out.println("Tunjangan  : " + d.getTunjangan());
+            System.out.println("Bonus      : " + d.getBonus());
+            System.out.println("Denda      : " + d.getDenda());
             System.out.println("-------------------------");
         }
     }
