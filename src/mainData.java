@@ -12,11 +12,10 @@ package Tugas_2;
 public class mainData {
     public static void main(String[] args) {
         Data db=new Data();
-        db.get();
-        db.get(104);
-        db.get("tunjangan",1000);//mengambil semua data yang memiliki tunjangan=1000
-        db.get("bonus", 500);//mengambil semua data yang memiliki bonus=500
-        db.get("gaji pokok",1500);//mengambil semua data yang memiliki gaji pokok=1500
-        db.get("denda", 300);//mengambil semua data yang memiliki denda=300
+        db.get();//mengambil semua data
+        db.get(104);//mengambil data dengan nik/id=104
+        db.get("gaji pokok",2000);//mengambil semua data yang memiliki gaji pokok=2000
+        db.get("tunjangan","<=",1000);//mengambil semua data yang memiliki tunjangan<=1000
+        db.get("bonus",">",450);//mengambil semua data yang memiliki bonus<450
     }
 }
