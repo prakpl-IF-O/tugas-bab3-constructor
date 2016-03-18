@@ -18,8 +18,9 @@ public class Data {
     private int [] denda={200,200,375,200,300,250,200,300,200,200};
     
     public void get(){
-        System.out.println("DATA KESELURUHAN");
-        System.out.println();
+        System.out.println("---------------------------------------");
+        System.out.println("         DATA KESELURUHAN");
+        System.out.println("---------------------------------------");
         for (int i=0; i<nik.length; i++){
             System.out.println("Nik         : "+nik[i]);
             System.out.println("Nama        : "+nama[i]);
@@ -29,5 +30,25 @@ public class Data {
             System.out.println("denda       : "+denda[i]);
             System.out.println();
         }
+        System.out.println("************** SELESAI ****************");
+        System.out.println();
     }
-} 
+    public void get(int id){
+        System.out.println("---------------------------------------");
+        System.out.println("DATA UNTUK KARYAWAN DENGAN NIK " + id);
+        System.out.println("---------------------------------------");
+        for (int i = 0; i < nik.length; i++) {
+            if (nik[i] == id) {
+                System.out.println("Nik         : " + nik[i]);
+                System.out.println("Nama        : " + nama[i]);
+                System.out.println("Gaji Pokok  : " + gajiPokok[i]);
+                System.out.println("Tunjangan   : " + tunjangan[i]);
+                System.out.println("Bonus       : " + bonus[i]);
+                System.out.println("denda       : " + denda[i]);
+                System.out.println();
+            }
+        }
+        System.out.println("************** SELESAI ****************");
+        System.out.println();
+    }
+}

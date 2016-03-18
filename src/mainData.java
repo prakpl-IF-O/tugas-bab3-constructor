@@ -13,5 +13,6 @@ public class mainData {
     public static void main(String[] args) {
         Data db=new Data();
         db.get();
+        db.get(104);
     }
 }
