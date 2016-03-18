@@ -14,5 +14,9 @@ public class mainData {
         Data db=new Data();
         db.get();
         db.get(104);
+        db.get("tunjangan",1000);//mengambil semua data yang memiliki tunjangan=1000
+        db.get("bonus", 500);//mengambil semua data yang memiliki bonus=500
+        db.get("gaji pokok",1500);//mengambil semua data yang memiliki gaji pokok=1500
+        db.get("denda", 300);//mengambil semua data yang memiliki denda=300
     }
 }
