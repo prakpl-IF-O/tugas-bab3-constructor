@@ -36,5 +36,40 @@ public class Tugas {
         System.out.println("");
     }
    
-  
+   public void get(String columnName, int value){
+        System.out.println("---------------------------------------------");
+        System.out.println("  DATA KARYAWAN BERDASARKAN "+columnName+" "+value);
+        System.out.println("==============================================");
+        if (columnName.equalsIgnoreCase("gaji pokok")){
+            for (int i=0; i<nik.length; i++){
+                if (gajiPokok[i]==value){
+                System.out.printf("%d%10s%15d%15d%10d%10d\n",nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                }
+        }
+        }
+        else if (columnName.equalsIgnoreCase("tunjangan")){
+            for (int i=0; i<nik.length; i++){
+                if (tunjangan[i]==value){
+                System.out.printf("%d%10s%15d%15d%10d%10d\n",nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+            }
+            }
+        }
+        else if (columnName.equalsIgnoreCase("bonus")){
+            for (int i=0; i<nik.length; i++){
+                if (bonus[i]==value){
+                System.out.printf("%d%10s%15d%15d%10d%10d\n",nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+            }
+            }
+        }
+        else if (columnName.equalsIgnoreCase("denda")){
+            for (int i=0; i<nik.length; i++){
+                if (denda[i]==value){
+                System.out.printf("%d%10s%15d%15d%10d%10d\n",nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                }
+        }
+        }
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+   }
 }
