@@ -51,7 +51,7 @@ public class DataPegawai {
         for (Pegawai pegawai : dataPegawai) {
             if (a.equalsIgnoreCase("Tunjangan")) {
                 if (pegawai.getTunjangan() == b) {
-                   pegawai.tampil();
+                    pegawai.tampil();
                 }
             } else if (a.equalsIgnoreCase("GajiPokok")) {
                 if (pegawai.getGajiPokok() == b) {
@@ -65,14 +65,40 @@ public class DataPegawai {
                 if (pegawai.getDenda() == b) {
                     pegawai.tampil();
                 }
+            } else {
+                System.out.println("Disk boot failure");
+                break;
             }
 
         }
     }
 
     public void get(String a, String b, int c) {
-        if (b == "<") {
+        for (Pegawai pegawai : dataPegawai) {
+            if (b == "<") {
+                if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() < c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Gaji Pokok")) {
+                    if (pegawai.getGajiPokok() < c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() < c) {
+                        pegawai.tampil();
+                    }
 
+                } else if (a.equalsIgnoreCase("Bonus")) {
+                    if (pegawai.getBonus() > c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Denda")) {
+                    if (pegawai.getGajiPokok() > c) {
+                        pegawai.tampil();
+                    }
+                }
+            }
         }
     }
 }
