@@ -14,6 +14,8 @@ public class MainDatabase {
         Database db = new Database();
         System.out.println("Menampilkan Data Karyawan");
         db.get();
+        System.out.println("Menampilkan Data Berdasarkan NIK");
+        db.get(109);
         
     }
 }
