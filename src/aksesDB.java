@@ -17,14 +17,6 @@ public class aksesDB {
     public void get(){
         data();
         for (int i = 0; i < db.length; i++) {
-            //get data
-            db[i].getNik();
-            db[i].getNama();
-            db[i].getGajiPokok();
-            db[i].getTunjangan();
-            db[i].getBonus();
-            db[i].getDenda();
-            //Menampilkan data (hapus jika tidak diperlukan)
             displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
         }
     }
@@ -33,14 +25,6 @@ public class aksesDB {
         data();
         for (int i = 0; i < db.length; i++) {
             if(nik == db[i].getNik()){
-                //get data
-                db[i].getNik();
-                db[i].getNama();
-                db[i].getGajiPokok();
-                db[i].getTunjangan();
-                db[i].getBonus();
-                db[i].getDenda();
-                //Menampilkan data (hapus jika tidak diperlukan)
                 displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                 break;
             }
@@ -54,33 +38,25 @@ public class aksesDB {
             case "gaji pokok":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getGajiPokok()){
-                        db[i].getGajiPokok();
-                        //Menampilkan data (hapus jika tidak diperlukan)
-                        displayFormat(db[i].getGajiPokok());
+                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                     }
                 }
             case "tunjangan":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getTunjangan()){
-                        db[i].getTunjangan();
-                        //Menampilkan data (hapus jika tidak diperlukan)
-                        displayFormat(db[i].getTunjangan());
+                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                     }
                 }
             case "bonus":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getBonus()){
-                        db[i].getBonus();
-                        //Menampilkan data (hapus jika tidak diperlukan)
-                        displayFormat(db[i].getBonus());
+                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                     }
                 }
             case "denda":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getDenda()){
-                        db[i].getDenda();
-                        //Menampilkan data (hapus jika tidak diperlukan)
-                        displayFormat(db[i].getDenda());
+                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                     }
                 }
             default:
@@ -96,33 +72,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(value > db[i].getGajiPokok()){
-                                db[i].getGajiPokok();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getGajiPokok());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(value < db[i].getGajiPokok()){
-                                db[i].getGajiPokok();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                 displayFormat(db[i].getGajiPokok());
+                               displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(value >= db[i].getGajiPokok()){
-                                db[i].getGajiPokok();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getGajiPokok());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(value <= db[i].getGajiPokok()){
-                                db[i].getGajiPokok();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getGajiPokok());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     default:
@@ -132,33 +100,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(value > db[i].getTunjangan()){
-                                db[i].getTunjangan();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getTunjangan());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(value < db[i].getTunjangan()){
-                                db[i].getTunjangan();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getTunjangan());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(value >= db[i].getTunjangan()){
-                                db[i].getTunjangan();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getTunjangan());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(value <= db[i].getTunjangan()){
-                                db[i].getTunjangan();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getTunjangan());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     default:
@@ -168,33 +128,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(value > db[i].getBonus()){
-                                db[i].getBonus();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getBonus());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(value < db[i].getBonus()){
-                                db[i].getBonus();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getBonus());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(value >= db[i].getBonus()){
-                                db[i].getBonus();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getBonus());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(value <= db[i].getBonus()){
-                                db[i].getBonus();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getBonus());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     default:
@@ -204,33 +156,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(value > db[i].getDenda()){
-                                db[i].getDenda();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getDenda());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(value < db[i].getDenda()){
-                                db[i].getDenda();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getDenda());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(value >= db[i].getDenda()){
-                                db[i].getDenda();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getDenda());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(value <= db[i].getDenda()){
-                                db[i].getDenda();
-                                //Menampilkan data (hapus jika tidak diperlukan)
-                                displayFormat(db[i].getDenda());
+                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
                             }
                         }break;
                     default:
@@ -247,10 +191,6 @@ public class aksesDB {
         System.out.println("Bonus      : "+e);
         System.out.println("Denda      : "+f);
         System.out.println("~~~~~~~~~~~~~~~~~~~~~");
-    }
-    
-    private void displayFormat(int a){
-        System.out.println(a);
     }
     
 }
