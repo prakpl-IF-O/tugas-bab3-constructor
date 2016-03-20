@@ -16,6 +16,10 @@ public class MainGaji {
         System.out.println("Menampilkan semua data");
         System.out.println("Menggunakan method db.get()");
         db.get();
+        System.out.println("=====================================");
+        System.out.println("Menampilkan data dengan NIK tertentu");
+        System.out.println("Menggunakan method db.get(int a)");
+        db.get(105);
             
     }
 }
