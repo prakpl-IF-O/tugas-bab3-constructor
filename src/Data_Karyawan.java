@@ -34,7 +34,7 @@ public class Data_Karyawan {
      System.out.printf("%-12s = %d \n","Gaji Pokok",Gpok);
      System.out.printf("%-12s = %d \n","Tunjangan",tun);
      System.out.printf("%-12s = %d \n","Bonus",bon);
-     System.out.printf("%-12s = %d \n","Denda",den);
-     
+     System.out.printf("%-12s = %d \n\n","Denda",den);
+
  }
 }

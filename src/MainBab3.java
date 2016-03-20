@@ -11,6 +11,9 @@ public class MainBab3 {
         Data_Karyawan k8 = new Data_Karyawan ("Sutiman",108,1500,1250,500,300);
         Data_Karyawan k9 = new Data_Karyawan ("Raja",109,1000,1000,500,200);
         Data_Karyawan k10 = new Data_Karyawan ("Harry",101,2250,1000,200,200);
-        
+        Olah_Data db = new Olah_Data();
+        db.IsiDataKaryawan(k1,k2,k3,k4,k5,k6,k7,k8,k9,k10);
+        System.out.printf("Cuman Tes dulu bener apa ngak buat ngeluarin semua :\n");
+        db.get();
     }
 }
