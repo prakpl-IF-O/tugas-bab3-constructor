@@ -21,11 +21,12 @@ public class MainGaji {
         System.out.println("=====================================");
         System.out.println("Menampilkan data dengan NIK tertentu");
         System.out.println("Menggunakan method db.get(int a)");
-        db.get(105);
+        db.get(106);
         System.out.println("=====================================");
         System.out.println("Menampilkan data dengan kriteria tertentu");
         System.out.println("Menggunakan method db.get(String a, String b, int c)");
-        db.get("tunjangan", "<", 1000);
+        db.get("bonus", ">", 500);
+        
 
     }
 }
