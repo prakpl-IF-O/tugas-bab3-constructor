@@ -13,7 +13,11 @@ public class MainBab3 {
         Data_Karyawan k10 = new Data_Karyawan ("Harry",101,2250,1000,200,200);
         Olah_Data db = new Olah_Data();
         db.IsiDataKaryawan(k1,k2,k3,k4,k5,k6,k7,k8,k9,k10);
-        System.out.printf("Cuman Tes dulu bener apa ngak buat ngeluarin semua :\n");
+        System.out.printf("%-10s PT GONOGINI %10s\n","=====","=====");
+        System.out.printf("%-15s : \n\n","Semua Karyawan");
         db.get();
+        System.out.printf("%-10s NEXT %10s\n","=====","=====");
+        System.out.printf("%-15s : \n\n","Karyawan Dari NIK");
+        db.get(109);
     }
 }

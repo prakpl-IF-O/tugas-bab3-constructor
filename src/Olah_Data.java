@@ -13,5 +13,12 @@ public class Olah_Data {
         for (Data_Karyawan semua : Karyawan) {
             semua.OutputKaryawan();
         }
+    } 
+    public void get(int nik){
+        for (Data_Karyawan sama : Karyawan) {
+            if (sama.getNik() == nik){
+                sama.OutputKaryawan();
+            }
+        }
     }
 }
