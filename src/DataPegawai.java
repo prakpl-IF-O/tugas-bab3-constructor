@@ -25,20 +25,15 @@ public class DataPegawai {
     }
 
     public void get() {
+        System.out.println("Data Semua Pegawai");
         for (Pegawai pegawai : dataPegawai) {
-            System.out.println("================================");
-            System.out.println("Nama\t\t:" + pegawai.getNama());
-            System.out.println("NIK\t\t:" + pegawai.getNik());
-            System.out.println("Gaji Pokok\t:" + pegawai.getGajiPokok());
-            System.out.println("Tunjangan\t:" + pegawai.getTunjangan());
-            System.out.println("Bonus\t\t:" + pegawai.getBonus());
-            System.out.println("Denda\t\t:" + pegawai.getDenda());
+           pegawai.tampil();
         }
 
     }
 
     public void get(String a) {
-
+        System.out.println("Pegawai dengan NIK "+a);
         for (Pegawai pegawai : dataPegawai) {
             if (pegawai.getNik() == a) {
                 pegawai.tampil();
@@ -74,6 +69,7 @@ public class DataPegawai {
     }
 
     public void get(String a, String b, int c) {
+        System.out.println("Pegawai dengan "+a+" "+b+" "+c);
         for (Pegawai pegawai : dataPegawai) {
             if (b == "<") {
                 if (a.equalsIgnoreCase("Tunjangan")) {
@@ -121,6 +117,84 @@ public class DataPegawai {
                     }
                 } else if (a.equalsIgnoreCase("Denda")) {
                     if (pegawai.getDenda() > c) {
+                        pegawai.tampil();
+                    }
+
+                } else {
+                    System.out.println("Disk boot failure");
+                }
+            } else if (b == ">=") { 
+                if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() >= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Gaji Pokok")) {
+                    if (pegawai.getGajiPokok() >= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() >= c) {
+                        pegawai.tampil();
+                    }
+
+                } else if (a.equalsIgnoreCase("Bonus")) {
+                    if (pegawai.getBonus() >= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Denda")) {
+                    if (pegawai.getDenda() >= c) {
+                        pegawai.tampil();
+                    }
+
+                } else {
+                    System.out.println("Disk boot failure");
+                }
+            } else if (b == "<=") {
+                if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() <= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Gaji Pokok")) {
+                    if (pegawai.getGajiPokok() <= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() <= c) {
+                        pegawai.tampil();
+                    }
+
+                } else if (a.equalsIgnoreCase("Bonus")) {
+                    if (pegawai.getBonus() <= c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Denda")) {
+                    if (pegawai.getDenda() <= c) {
+                        pegawai.tampil();
+                    }
+
+                } else {
+                    System.out.println("Disk boot failure");
+                }
+            } else if (b == "=") {
+                if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() == c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Gaji Pokok")) {
+                    if (pegawai.getGajiPokok() == c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() == c) {
+                        pegawai.tampil();
+                    }
+
+                } else if (a.equalsIgnoreCase("Bonus")) {
+                    if (pegawai.getBonus() == c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Denda")) {
+                    if (pegawai.getDenda() == c) {
                         pegawai.tampil();
                     }
 
