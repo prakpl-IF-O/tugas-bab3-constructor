@@ -15,6 +15,7 @@ public class aksesDB {
     }
     
     public void get(){
+        data();
         for (int i = 0; i < db.length; i++) {
             //get data
             db[i].getNik();
@@ -29,6 +30,7 @@ public class aksesDB {
     }
     
     public void get(int nik){
+        data();
         for (int i = 0; i < db.length; i++) {
             if(nik == db[i].getNik()){
                 //get data
@@ -46,6 +48,7 @@ public class aksesDB {
     }
     
     public void get(String opsi, int value){
+        data();
         String ops = opsi.toLowerCase();
         switch(ops){
             case "gaji pokok":
@@ -85,6 +88,7 @@ public class aksesDB {
     }
     
     public void get(String opsi, String operator, int value){
+        data();
         String ops = opsi.toLowerCase();
         switch(ops){
             case "gaji pokok":
@@ -235,16 +239,17 @@ public class aksesDB {
         }
     }
     
-    public void displayFormat(int a, String b, int c, int d, int e, int f){
+    private void displayFormat(int a, String b, int c, int d, int e, int f){
         System.out.println("NIK        : "+a);
         System.out.println("Nama       : "+b);
         System.out.println("Gaji Pokok : "+c);
         System.out.println("Tunjangan  : "+d);
         System.out.println("Bonus      : "+e);
         System.out.println("Denda      : "+f);
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
     }
     
-    public void displayFormat(int a){
+    private void displayFormat(int a){
         System.out.println(a);
     }
     
