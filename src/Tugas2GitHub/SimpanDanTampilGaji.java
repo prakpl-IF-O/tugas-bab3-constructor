@@ -29,4 +29,105 @@ public class SimpanDanTampilGaji {
             }
         }
     }
+    
+    public void get(String a, String b, int c) {
+        for (SimpanGaji x : tampung) {
+             if (a.equalsIgnoreCase("tunjangan")&&b.equalsIgnoreCase(">=")){
+                if(x.getTunjangan()>=c){
+                   x.TampilSemua();
+                    System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("tunjangan")&&b.equalsIgnoreCase(">")){
+                if(x.getTunjangan()>c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("tunjangan")&&b.equalsIgnoreCase("<")){
+                if(x.getTunjangan()<c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("tunjangan")&&b.equalsIgnoreCase("<=")){
+                if(x.getTunjangan()<=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("gaji pokok")&&b.equalsIgnoreCase(">=")){
+                if(x.getTunjangan()>=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("gaji pokok")&&b.equalsIgnoreCase(">")){
+                if(x.getTunjangan()>c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("gaji pokok")&&b.equalsIgnoreCase("<")){
+                if(x.getTunjangan()<c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("gaji pokok")&&b.equalsIgnoreCase("<=")){
+                if(x.getTunjangan()<=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("bonus")&&b.equalsIgnoreCase(">=")){
+                if(x.getTunjangan()>=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("bonus")&&b.equalsIgnoreCase(">")){
+                if(x.getTunjangan()>c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("bonus")&&b.equalsIgnoreCase("<")){
+                if(x.getTunjangan()<c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("bonus")&&b.equalsIgnoreCase("<=")){
+                if(x.getTunjangan()<=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("denda")&&b.equalsIgnoreCase(">=")){
+                if(x.getTunjangan()>=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("denda")&&b.equalsIgnoreCase(">")){
+                if(x.getTunjangan()>c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("denda")&&b.equalsIgnoreCase("<")){
+                if(x.getTunjangan()<c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+             else if (a.equalsIgnoreCase("denda")&&b.equalsIgnoreCase("<=")){
+                if(x.getTunjangan()<=c){
+                   x.TampilSemua();
+                   System.out.println("");
+                }
+             }
+        }
+    }
 }
