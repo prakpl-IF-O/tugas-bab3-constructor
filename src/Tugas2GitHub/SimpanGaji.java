@@ -11,7 +11,6 @@ public class SimpanGaji {
         this.bonus = bonus;
         this.denda = denda;
     }
-
     public String getNama() {
         return nama;
     }
