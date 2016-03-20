@@ -1,6 +1,8 @@
 public class Karyawan {
     private int NIK, Gajipokok, Tunjangan, Bonus, Denda;
     private String NamaKar;
+public Karyawan (){
+}    
 //Konstraktor
     public Karyawan(int q, int w,int e, int r, int t, String y) {
         NIK       = q;
