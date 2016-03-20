@@ -33,49 +33,46 @@ public class DataPegawai {
             System.out.println("Tunjangan\t:" + pegawai.getTunjangan());
             System.out.println("Bonus\t\t:" + pegawai.getBonus());
             System.out.println("Denda\t\t:" + pegawai.getDenda());
-
         }
 
     }
 
     public void get(String a) {
+
         for (Pegawai pegawai : dataPegawai) {
             if (pegawai.getNik() == a) {
-                System.out.println("================================");
-                System.out.println("Nama\t\t:" + pegawai.getNama());
-                System.out.println("NIK\t\t:" + pegawai.getNik());
-                System.out.println("Gaji Pokok\t:" + pegawai.getGajiPokok());
-                System.out.println("Tunjangan\t:" + pegawai.getTunjangan());
-                System.out.println("Bonus\t\t:" + pegawai.getBonus());
-                System.out.println("Denda\t\t:" + pegawai.getDenda());
+                pegawai.tampil();
             }
         }
     }
 
     public void get(String a, int b) {
+        System.out.println("Pegawai dengan " + a + " " + b);
         for (Pegawai pegawai : dataPegawai) {
             if (a.equalsIgnoreCase("Tunjangan")) {
                 if (pegawai.getTunjangan() == b) {
-                    System.out.println("================================");
-                    System.out.println("Nama\t\t:" + pegawai.getNama());
-                    System.out.println("NIK\t\t:" + pegawai.getNik());
-                    System.out.println("Gaji Pokok\t:" + pegawai.getGajiPokok());
-                    System.out.println("Tunjangan\t:" + pegawai.getTunjangan());
-                    System.out.println("Bonus\t\t:" + pegawai.getBonus());
-                    System.out.println("Denda\t\t:" + pegawai.getDenda());
+                   pegawai.tampil();
                 }
             } else if (a.equalsIgnoreCase("GajiPokok")) {
                 if (pegawai.getGajiPokok() == b) {
-                    System.out.println("================================");
-                    System.out.println("Nama\t\t:" + pegawai.getNama());
-                    System.out.println("NIK\t\t:" + pegawai.getNik());
-                    System.out.println("Gaji Pokok\t:" + pegawai.getGajiPokok());
-                    System.out.println("Tunjangan\t:" + pegawai.getTunjangan());
-                    System.out.println("Bonus\t\t:" + pegawai.getBonus());
-                    System.out.println("Denda\t\t:" + pegawai.getDenda());
+                    pegawai.tampil();
+                }
+            } else if (a.equalsIgnoreCase("Bonus")) {
+                if (pegawai.getBonus() == b) {
+                    pegawai.tampil();
+                }
+            } else if (a.equalsIgnoreCase("Denda")) {
+                if (pegawai.getDenda() == b) {
+                    pegawai.tampil();
                 }
             }
-        }
 
+        }
+    }
+
+    public void get(String a, String b, int c) {
+        if (b == "<") {
+
+        }
     }
 }
