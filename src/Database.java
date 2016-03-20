@@ -1,12 +1,11 @@
 public class Database {
-    private int nik;
-    private long gajiPokok, tunjangan, bonus, denda;
+    private int nik, gajiPokok, tunjangan, bonus, denda;
     private String nama;
     
     public Database(){
     }
     
-    public Database(int nik, String nama, long gajiPokok, long tunjangan, long bonus, long denda) {
+    public Database(int nik, String nama, int gajiPokok, int tunjangan, int bonus, int denda) {
         this.nik = nik;
         this.gajiPokok = gajiPokok;
         this.tunjangan = tunjangan;
@@ -19,19 +18,19 @@ public class Database {
         return nik;
     }
 
-    public long getGajiPokok() {
+    public int getGajiPokok() {
         return gajiPokok;
     }
 
-    public long getTunjangan() {
+    public int getTunjangan() {
         return tunjangan;
     }
 
-    public long getBonus() {
+    public int getBonus() {
         return bonus;
     }
 
-    public long getDenda() {
+    public int getDenda() {
         return denda;
     }
 
