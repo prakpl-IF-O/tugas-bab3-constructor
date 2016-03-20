@@ -35,4 +35,13 @@ public class SimpanGaji {
     public int getDenda() {
         return denda;
     }
+    
+    public void TampilSemua(){
+        System.out.println("Nama        : "+nama);
+        System.out.println("NIK         : "+nik);
+        System.out.println("Gaji Pokok  : "+gajiPokok);
+        System.out.println("tunjangan   : "+tunjangan);
+        System.out.println("bonus       : "+bonus);
+        System.out.println("denda       : "+denda);
+    }
 }
