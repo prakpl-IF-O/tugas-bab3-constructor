@@ -9,5 +9,8 @@
  * @author Enggar Pratama
  */
 public class DATA_MAIN {
-    
+     public static void main(String[] args) {
+        
+         
+    }
 }
