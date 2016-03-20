@@ -31,6 +31,23 @@ public class Database {
         System.out.println();
     }
 
+    public void get(int Nik_) {
+        System.out.println("===================DATA KARYAWAN DENGAN NIK " + Nik_ + "=====================");
+        for (int i = 0; i < nik.length; i++) {
+            if (nik[i] == Nik_) {
+                System.out.println("Nik\t\t: " + nik[i]);
+                System.out.println("Nama\t\t: " + nama[i]);
+                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                System.out.println("Tunjangan\t: " + tunjangan[i]);
+                System.out.println("Bonus\t\t: " + bonus[i]);
+                System.out.println("denda\t\t: " + denda[i]);
+                System.out.println("=============================================================================");
+
+            }
+        }
+        System.out.println();
+    }
+
     
     }
 
