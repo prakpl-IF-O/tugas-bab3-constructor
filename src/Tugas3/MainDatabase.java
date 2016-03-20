@@ -16,6 +16,8 @@ public class MainDatabase {
         db.get();
         System.out.println("Menampilkan Data Berdasarkan NIK");
         db.get(109);
+        System.out.println("Menampilkan Data Dengan Gaji 2000");
+        db.get("gaji pokok",2000);
         
     }
 }
