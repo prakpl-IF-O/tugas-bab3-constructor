@@ -15,19 +15,178 @@ public class aksesDB {
     }
     
     public void get(){
-        
+        for (int i = 0; i < db.length; i++) {
+            db[i].getNik();
+            db[i].getNama();
+            db[i].getGajiPokok();
+            db[i].getTunjangan();
+            db[i].getBonus();
+            db[i].getDenda();
+        }
     }
     
     public void get(int nik){
-        
+        for (int i = 0; i < db.length; i++) {
+            if(nik == db[i].getNik()){
+                db[i].getNik();
+                db[i].getNama();
+                db[i].getGajiPokok();
+                db[i].getTunjangan();
+                db[i].getBonus();
+                db[i].getDenda();
+                break;
+            }
+        }
     }
     
-    public void get(String opsi, long value){
-        
+    public void get(String opsi, int value){
+        String ops = opsi.toLowerCase();
+        switch(ops){
+            case "gaji pokok":
+                for (int i = 0; i < db.length; i++) {
+                    if(value == db[i].getGajiPokok()){
+                        db[i].getGajiPokok();
+                    }
+                }
+            case "tunjangan":
+                for (int i = 0; i < db.length; i++) {
+                    if(value == db[i].getTunjangan()){
+                        db[i].getTunjangan();
+                    }
+                }
+            case "bonus":
+                for (int i = 0; i < db.length; i++) {
+                    if(value == db[i].getBonus()){
+                        db[i].getBonus();
+                    }
+                }
+            case "denda":
+                for (int i = 0; i < db.length; i++) {
+                    if(value == db[i].getDenda()){
+                        db[i].getDenda();
+                    }
+                }
+            default:
+        }
     }
     
-    public void get(String opsi, String operator, long value){
-        
+    public void get(String opsi, String operator, int value){
+        String ops = opsi.toLowerCase();
+        switch(ops){
+            case "gaji pokok":
+                switch(operator){
+                    case ">":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value > db[i].getGajiPokok()){
+                                db[i].getGajiPokok();
+                            }
+                        }break;
+                    case "<":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value < db[i].getGajiPokok()){
+                                db[i].getGajiPokok();
+                            }
+                        }break;
+                    case ">=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value >= db[i].getGajiPokok()){
+                                db[i].getGajiPokok();
+                            }
+                        }break;
+                    case "<=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value <= db[i].getGajiPokok()){
+                                db[i].getGajiPokok();
+                            }
+                        }break;
+                    default:
+                }break;
+            case "tunjangan":
+                switch(operator){
+                    case ">":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value > db[i].getTunjangan()){
+                                db[i].getTunjangan();
+                            }
+                        }break;
+                    case "<":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value < db[i].getTunjangan()){
+                                db[i].getTunjangan();
+                            }
+                        }break;
+                    case ">=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value >= db[i].getTunjangan()){
+                                db[i].getTunjangan();
+                            }
+                        }break;
+                    case "<=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value <= db[i].getTunjangan()){
+                                db[i].getTunjangan();
+                            }
+                        }break;
+                    default:
+                }break;
+            case "bonus":
+                switch(operator){
+                    case ">":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value > db[i].getBonus()){
+                                db[i].getBonus();
+                            }
+                        }break;
+                    case "<":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value < db[i].getBonus()){
+                                db[i].getBonus();
+                            }
+                        }break;
+                    case ">=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value >= db[i].getBonus()){
+                                db[i].getBonus();
+                            }
+                        }break;
+                    case "<=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value <= db[i].getBonus()){
+                                db[i].getBonus();
+                            }
+                        }break;
+                    default:
+                }break;
+            case "denda":
+                switch(operator){
+                    case ">":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value > db[i].getDenda()){
+                                db[i].getDenda();
+                            }
+                        }break;
+                    case "<":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value < db[i].getDenda()){
+                                db[i].getDenda();
+                            }
+                        }break;
+                    case ">=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value >= db[i].getDenda()){
+                                db[i].getDenda();
+                            }
+                        }break;
+                    case "<=":
+                        for (int i = 0; i < db.length; i++) {
+                            if(value <= db[i].getDenda()){
+                                db[i].getDenda();
+                            }
+                        }break;
+                    default:
+                }break;
+            default:
+        }
     }
     
 }
