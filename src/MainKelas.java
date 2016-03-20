@@ -24,8 +24,16 @@ public class MainKelas {
         obj.tambahData("109", "Raja", 1000, 1000, 500, 200);
         obj.tambahData("110", "Harry", 2250, 1000, 200, 200);
 
-     
-        obj.get("tunjangan",350);
-        System.out.println();
+        obj.get();
+        System.out.println("\n");
+        obj.get("104");
+        System.out.println("\n");
+        obj.get("gajipokok", 2000);
+       System.out.println("\n");
+        obj.get("tunjangan", "<=", 1000);
+        System.out.println("\n");
+        obj.get("bonus", ">", 450);
+        
+        
     }
 }
