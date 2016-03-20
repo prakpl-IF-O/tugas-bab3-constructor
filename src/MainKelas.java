@@ -29,11 +29,10 @@ public class MainKelas {
         obj.get("104");
         System.out.println("\n");
         obj.get("gajipokok", 2000);
-       System.out.println("\n");
+        System.out.println("\n");
         obj.get("tunjangan", "<=", 1000);
         System.out.println("\n");
         obj.get("bonus", ">", 450);
-        
-        
+
     }
 }
