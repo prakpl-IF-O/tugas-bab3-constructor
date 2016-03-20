@@ -2,7 +2,10 @@ public class Database {
     private int nik;
     private long gajiPokok, tunjangan, bonus, denda;
     private String nama;
-
+    
+    public Database(){
+    }
+    
     public Database(int nik, String nama, long gajiPokok, long tunjangan, long bonus, long denda) {
         this.nik = nik;
         this.gajiPokok = gajiPokok;
