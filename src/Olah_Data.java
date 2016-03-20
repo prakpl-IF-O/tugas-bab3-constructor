@@ -22,24 +22,35 @@ public class Olah_Data {
         }
     }
     public void get(String apa, int nilai){
+        int i=0;
         for (Data_Karyawan cek : Karyawan) {
+            i=i+1;
             switch (apa) {
                 case "Gaji Pokok" : 
                     if (nilai == cek.getGpok()){
                         cek.OutputKaryawan();
+                    } else {
+                        System.out.printf("Nilai Gajih Pokok untuk Karyawan NIK %d Tidak Cocok",(100+i));
                     } break;
                 case "Tunjangan" : 
                     if (nilai == cek.getTun()){
                         cek.OutputKaryawan();
+                    } else {
+                        System.out.printf("Nilai Tunjangan untuk Karyawan NIK %d Tidak Cocok",(100+i));
                     } break;
                 case "Bonus" : 
                     if (nilai == cek.getBon()){
                         cek.OutputKaryawan();
+                    } else {
+                        System.out.printf("Nilai Bonus untuk Karyawan NIK %d Tidak Cocok",(100+i));
                     } break;
                 case "Denda" : 
                     if (nilai == cek.getDen()){
                         cek.OutputKaryawan();
+                    } else {
+                        System.out.printf("Nilai Denda untuk Karyawan NIK %d Tidak Cocok",(100+i));
                     } break;
+                default : System.out.printf("Kategori %s untuk Karyawan NIK %d tidak sesuai .. \n",apa,(100+i));
             }
         }
     }
