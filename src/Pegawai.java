@@ -50,6 +50,15 @@ public class Pegawai {
     public int getDenda() {
         return denda;
     }
-    
+
+    public void tampil() {
+        System.out.println("================================");
+        System.out.println("Nama\t\t:" + getNama());
+        System.out.println("NIK\t\t:" + getNik());
+        System.out.println("Gaji Pokok\t:" + getGajiPokok());
+        System.out.println("Tunjangan\t:" + getTunjangan());
+        System.out.println("Bonus\t\t:" + getBonus());
+        System.out.println("Denda\t\t:" + getDenda());
+    }
 
 }
