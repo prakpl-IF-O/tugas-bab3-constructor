@@ -42,7 +42,7 @@ public class MainBab3 {
         db.get(kategori,">",nilai);
         System.out.printf("%-15s Untuk <= %15s\n","=======","=======");
         db.get(kategori,"<=",nilai);
-        System.out.printf("%-15s Untuk <= %15s\n","=======","=======");
+        System.out.printf("%-15s Untuk >= %15s\n","=======","=======");
         db.get(kategori,">=",nilai);
         System.out.printf("\n\n");
         System.out.printf("%-10s Terimakasih %-10s","=====","=====");
