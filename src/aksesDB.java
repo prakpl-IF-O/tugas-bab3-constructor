@@ -14,4 +14,20 @@ public class aksesDB {
         db[9] = new Database(110, "Harry", 2250, 1000, 200, 200);
     }
     
+    public void get(){
+        
+    }
+    
+    public void get(int nik){
+        
+    }
+    
+    public void get(String opsi, long value){
+        
+    }
+    
+    public void get(String opsi, String operator, long value){
+        
+    }
+    
 }
