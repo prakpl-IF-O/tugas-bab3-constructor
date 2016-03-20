@@ -19,15 +19,27 @@ public class dataBase {
     private int denda[] = {200, 200, 375, 200, 300, 250, 200, 300, 200, 200};
 
     public void get() {
-
+        System.out.println("=====================(SELURUH DATA)=====================");
+        System.out.print("NIK     NAMA     GAJI     TUNJANGAN     BONUS     DENDA\n");
+        for (int i = 0; i < 10; i++) {
+            System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+        }
+        System.out.println("");
     }
 
     public void get(int id) {
-
+        System.out.println("=====================(DATA NIK " + id + ")=====================");
+        System.out.print("NIK     NAMA     GAJI     TUNJANGAN     BONUS     DENDA\n");
+        for (int i = 0; i < 10; i++) {
+            if (nik[i] == id) {
+                System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+            }
+        }
+        System.out.println("");
     }
 
     public void get(String columnName, int obValue) {
-
+        System.out.println("================(DATA " + columnName + " = " + obValue + ")=================");
     }
 
     public void get(String columnName, String operator, int obValue) {
