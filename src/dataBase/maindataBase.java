@@ -10,10 +10,17 @@ package dataBase;
  * @author Faza Abdi
  */
 public class maindataBase {
+
     public static void main(String[] args) {
-        dataBase a=new dataBase();
+        dataBase a = new dataBase();
         a.get();
         a.get(104);
-        a.get("tunjangan", 2000);
+        a.get("Gaji", 1000);
+        a.get("denda", 200);
+        a.get("gaji", "<", 1000);
+        a.get("gaji", "<=", 1000);
+        a.get("gaji", ">", 1000);
+        a.get("gaji", ">=", 1000);
+
     }
 }
