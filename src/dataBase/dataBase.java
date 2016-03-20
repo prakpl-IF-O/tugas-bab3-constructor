@@ -99,11 +99,83 @@ public class dataBase {
                 }
             }
         } else if (columnName == "tunjangan" || columnName == "Tunjangan" || columnName == "TUNJANGAN") {
-
+            if (operator == ">") {
+                for (int i = 0; i < 10; i++) {
+                    if (tunjangan[i] > obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int i = 0; i < 10; i++) {
+                    if (tunjangan[i] < obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int i = 0; i < 10; i++) {
+                    if (tunjangan[i] >= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int i = 0; i < 10; i++) {
+                    if (tunjangan[i] <= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            }
         } else if (columnName == "bonus" || columnName == "Bonus" || columnName == "BONUS") {
-
+            if (operator == ">") {
+                for (int i = 0; i < 10; i++) {
+                    if (bonus[i] > obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int i = 0; i < 10; i++) {
+                    if (bonus[i] < obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int i = 0; i < 10; i++) {
+                    if (bonus[i] >= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int i = 0; i < 10; i++) {
+                    if (bonus[i] <= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            }
         } else if (columnName == "denda" || columnName == "Denda" || columnName == "DENDA") {
-
+            if (operator == ">") {
+                for (int i = 0; i < 10; i++) {
+                    if (denda[i] > obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int i = 0; i < 10; i++) {
+                    if (denda[i] < obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int i = 0; i < 10; i++) {
+                    if (denda[i] >= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int i = 0; i < 10; i++) {
+                    if (denda[i] <= obValue) {
+                        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                    }
+                }
+            }
         }
     }
 }
