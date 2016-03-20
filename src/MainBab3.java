@@ -21,6 +21,16 @@ public class MainBab3 {
         db.get(109);
         System.out.printf("%-10s NEXT %10s\n","=====","=====");
         System.out.printf("%-20s : \n\n","Menurut Yang Peroleh Karyawan :");
+        System.out.printf("Tunjangan : \n");
         db.get("Tunjangan",1000);
+        System.out.printf("Gaji Pokok : \n");
+        db.get("Gaji Pokok",2000);
+        System.out.printf("Bonus : \n");
+        db.get("Bonus",500);
+        System.out.printf("Denda : \n");
+        db.get("Denda",200);
+        System.out.printf("%-10s NEXT %10s\n","=====","=====");
+        System.out.printf("%-20s : \n\n","Menurut Yang Peroleh Karyawan :");
+        db.get("Tunjangan","<",1000);
     }
 }

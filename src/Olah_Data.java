@@ -21,23 +21,91 @@ public class Olah_Data {
             }
         }
     }
-    public void get (String apa, int nilai){
+    public void get(String apa, int nilai){
         for (Data_Karyawan cek : Karyawan) {
             switch (apa) {
-                case "Gaji Pokok" : if (nilai == cek.getGpok()){
-                    cek.OutputKaryawan();
-                } break;
-                case "Tunjangan" : if (nilai == cek.getTun()){
-                    cek.OutputKaryawan();
-                } break;
-                case "Bonus" : if (nilai == cek.getBon()){
-                    cek.OutputKaryawan();
-                } break;
-                case "Denda" : if (nilai == cek.getDen()){
-                    cek.OutputKaryawan();
-                } break;
+                case "Gaji Pokok" : 
+                    if (nilai == cek.getGpok()){
+                        cek.OutputKaryawan();
+                    } break;
+                case "Tunjangan" : 
+                    if (nilai == cek.getTun()){
+                        cek.OutputKaryawan();
+                    } break;
+                case "Bonus" : 
+                    if (nilai == cek.getBon()){
+                        cek.OutputKaryawan();
+                    } break;
+                case "Denda" : 
+                    if (nilai == cek.getDen()){
+                        cek.OutputKaryawan();
+                    } break;
             }
         }
     }
-    
+    public void get(String apa,String tanda,int nilai){
+        for (Data_Karyawan cek : Karyawan){
+            switch (apa) {
+                case "Gaji Pokok" : 
+                    if (tanda=="<"){
+                        if (nilai < cek.getGpok()){
+                            cek.OutputKaryawan();
+                        }
+                    } else if (tanda==">"){
+                        if (nilai > cek.getGpok()){
+                            cek.OutputKaryawan();
+                        } 
+                    } else if (tanda=="<="){
+                        if (nilai <= cek.getGpok()){
+                            cek.OutputKaryawan();
+                        }
+                    } else if (tanda==">="){
+                        if (nilai >= cek.getGpok()) 
+                            cek.OutputKaryawan();
+                    }break;
+                case "Tunjangan" :
+                    if (tanda=="<"){
+                        if (nilai < cek.getTun())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">"){
+                        if (nilai > cek.getTun())
+                            cek.OutputKaryawan();
+                    } else if (tanda=="<="){
+                        if (nilai <= cek.getTun())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">="){
+                        if (nilai >= cek.getTun())
+                            cek.OutputKaryawan();
+                    }break;
+                case "Bonus" : 
+                    if (tanda=="<"){
+                        if (nilai < cek.getBon())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">"){
+                        if (nilai > cek.getBon())
+                            cek.OutputKaryawan();
+                    } else if (tanda=="<="){
+                        if (nilai <= cek.getBon())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">="){
+                        if (nilai >= cek.getBon())
+                            cek.OutputKaryawan();
+                    }break;
+                case "Denda" : 
+                    if (tanda=="<"){
+                        if (nilai < cek.getDen())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">"){
+                        if (nilai > cek.getDen())
+                            cek.OutputKaryawan();
+                    } else if (tanda=="<="){
+                        if (nilai <= cek.getDen())
+                            cek.OutputKaryawan();
+                    } else if (tanda==">="){
+                        if (nilai >= cek.getDen())
+                            cek.OutputKaryawan();
+                    }break;
+            }
+        }
+    }
 }
