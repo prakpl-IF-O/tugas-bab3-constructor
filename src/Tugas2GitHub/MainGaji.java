@@ -25,7 +25,8 @@ public class MainGaji {
         System.out.println("=====================================");
         System.out.println("Menampilkan data dengan kriteria tertentu");
         System.out.println("Menggunakan method db.get(String a, String b, int c)");
-        db.get("bonus", ">", 500);
+        System.out.println("Misal untuk data dengan nilai gaji pokok >= 2000");
+        db.get("gaji pokok", ">=", 2000);
         
 
     }
