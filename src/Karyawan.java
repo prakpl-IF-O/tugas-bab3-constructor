@@ -1,52 +1,50 @@
 public class Karyawan {
     private int NIK, Gajipokok, Tunjangan, Bonus, Denda;
     private String NamaKar;
-    //set
-    public void setNIK(int NIK) {
-        this.NIK = NIK;
+//Konstraktor
+    public Karyawan(int q, int w,int e, int r, int t, String y) {
+        NIK       = q;
+        Gajipokok = w;
+        Tunjangan = e;
+        Bonus     = r;
+        Denda     = t;
+        NamaKar   = y;
     }
-
-    public void setGajipokok(int Gajipokok) {
-        this.Gajipokok = Gajipokok;
+//set
+    public void setNIK(int q) {
+        NIK = q;
     }
-
-    public void setTunjangan(int Tunjangan) {
-        this.Tunjangan = Tunjangan;
+    public void setGajipokok(int w) {
+        Gajipokok = w;
     }
-
-    public void setBonus(int Bonus) {
-        this.Bonus = Bonus;
+    public void setTunjangan(int e) {
+        Tunjangan = e;
     }
-
-    public void setDenda(int Denda) {
-        this.Denda = Denda;
+    public void setBonus(int r) {
+        Bonus = r;
     }
-
-    public void setNamaKar(String NamaKar) {
-        this.NamaKar = NamaKar;
+    public void setDenda(int t) {
+        Denda = t;
+    }
+    public void setNamaKar(String y) {
+        NamaKar = y;
     }
     //get
-
     public int getNIK() {
         return NIK;
     }
-
     public int getGajipokok() {
         return Gajipokok;
     }
-
     public int getTunjangan() {
         return Tunjangan;
     }
-
     public int getBonus() {
         return Bonus;
     }
-
     public int getDenda() {
         return Denda;
     }
-
     public String getNamaKar() {
         return NamaKar;
     }
