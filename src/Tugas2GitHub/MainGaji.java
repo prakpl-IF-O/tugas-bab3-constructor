@@ -15,13 +15,16 @@ public class MainGaji {
         db.isiData("Sutiman", 108, 1500, 1250, 500, 300);
         db.isiData("Raja", 109, 1000, 1000, 500, 200);
         db.isiData("paijo", 110, 2250, 1000, 200, 200);
+        
         System.out.println("Menampilkan semua data");
         System.out.println("Menggunakan method db.get()");
         db.get();
+        
         System.out.println("=====================================");
         System.out.println("Menampilkan data dengan NIK tertentu");
         System.out.println("Menggunakan method db.get(int a)");
         db.get(106);
+        
         System.out.println("=====================================");
         System.out.println("Menampilkan data dengan kriteria tertentu");
         System.out.println("Menggunakan method db.get(String a, String b, int c)");

@@ -13,7 +13,7 @@ public class SimpanDanTampilGaji {
     public void isiData(String nama, int nik, int gajiPokok, int tunjangan, int bonus, int denda) {
         tampung.add(new SimpanGaji(nama, nik, gajiPokok, tunjangan, bonus, denda));
     }
-
+    
     public void get() {
         for (SimpanGaji a : tampung) {
             a.TampilSemua();
