@@ -90,13 +90,42 @@ public class DataPegawai {
                     }
 
                 } else if (a.equalsIgnoreCase("Bonus")) {
+                    if (pegawai.getBonus() < c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Denda")) {
+                    if (pegawai.getDenda() < c) {
+                        pegawai.tampil();
+                    }
+
+                } else {
+                    System.out.println("Disk boot failure");
+                }
+            } else if (b == ">") {
+                if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() > c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Gaji Pokok")) {
+                    if (pegawai.getGajiPokok() > c) {
+                        pegawai.tampil();
+                    }
+                } else if (a.equalsIgnoreCase("Tunjangan")) {
+                    if (pegawai.getTunjangan() > c) {
+                        pegawai.tampil();
+                    }
+
+                } else if (a.equalsIgnoreCase("Bonus")) {
                     if (pegawai.getBonus() > c) {
                         pegawai.tampil();
                     }
                 } else if (a.equalsIgnoreCase("Denda")) {
-                    if (pegawai.getGajiPokok() > c) {
+                    if (pegawai.getDenda() > c) {
                         pegawai.tampil();
                     }
+
+                } else {
+                    System.out.println("Disk boot failure");
                 }
             }
         }
