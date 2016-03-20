@@ -39,7 +39,34 @@ public class dataBase {
     }
 
     public void get(String columnName, int obValue) {
-        System.out.println("================(DATA " + columnName + " = " + obValue + ")=================");
+        System.out.println("====================(DATA " + columnName + " = " + obValue + ")==================");
+        System.out.print("NIK     NAMA     GAJI     TUNJANGAN     BONUS     DENDA\n");
+        if (columnName == "gaji" || columnName == "Gaji" || columnName == "GAJI") {
+            for (int i = 0; i < 10; i++) {
+                if (gajiPokok[i] == obValue) {
+                    System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        } else if (columnName == "tunjangan" || columnName == "Tunjangan" || columnName == "TUNJANGAN") {
+            for (int i = 0; i < 10; i++) {
+                if (tunjangan[i] == obValue) {
+                    System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        } else if (columnName == "bonus" || columnName == "Bonus" || columnName == "BONUS") {
+            for (int i = 0; i < 10; i++) {
+                if (bonus[i] == obValue) {
+                    System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }else if (columnName == "denda" || columnName == "Denda" || columnName == "DENDA") {
+            for (int i = 0; i < 10; i++) {
+                if (denda[i] == obValue) {
+                    System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+        System.out.println("");
     }
 
     public void get(String columnName, String operator, int obValue) {
