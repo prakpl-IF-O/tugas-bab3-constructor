@@ -14,7 +14,10 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        data d1=new data();
+        d1.get();
+        d1.get("4");
+        d1.get("gaji pokok", 1250);
     }
     
 }
