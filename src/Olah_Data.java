@@ -21,4 +21,23 @@ public class Olah_Data {
             }
         }
     }
+    public void get (String apa, int nilai){
+        for (Data_Karyawan cek : Karyawan) {
+            switch (apa) {
+                case "Gaji Pokok" : if (nilai == cek.getGpok()){
+                    cek.OutputKaryawan();
+                } break;
+                case "Tunjangan" : if (nilai == cek.getTun()){
+                    cek.OutputKaryawan();
+                } break;
+                case "Bonus" : if (nilai == cek.getBon()){
+                    cek.OutputKaryawan();
+                } break;
+                case "Denda" : if (nilai == cek.getDen()){
+                    cek.OutputKaryawan();
+                } break;
+            }
+        }
+    }
+    
 }
