@@ -32,6 +32,19 @@ public class MainBab3 {
         db.get(kategori,nilai);
         System.out.printf("%-10s NEXT %10s\n","=====","=====");
         System.out.printf("%-20s : \n\n","Menurut Yang Peroleh Karyawan :");
-        db.get("Tunjangan","<",1000);
+        System.out.printf("%-32s : ","Masukan Kategori Untuk Karyawan");
+        kategori = in.nextLine(); kategori = in.nextLine();
+        System.out.printf("%-32s : ","Masukan Nilai Dari Kategorinya");
+        nilai = in.nextInt();
+        System.out.printf("%-15s Untuk < %15s\n","=======","=======");
+        db.get(kategori,"<",nilai);
+        System.out.printf("%-15s Untuk > %15s\n","=======","=======");
+        db.get(kategori,">",nilai);
+        System.out.printf("%-15s Untuk <= %15s\n","=======","=======");
+        db.get(kategori,"<=",nilai);
+        System.out.printf("%-15s Untuk <= %15s\n","=======","=======");
+        db.get(kategori,">=",nilai);
+        System.out.printf("\n\n");
+        System.out.printf("%-10s Terimakasih %-10s","=====","=====");
     }
 }
