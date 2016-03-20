@@ -18,7 +18,7 @@ public class Pegawai {
     private int bonus;
     private int denda;
 
-    public Pegawai(String nama, String nik, int gaji, int tunjangan, int bonus, int denda) {
+    public Pegawai(String nik, String nama, int gaji, int tunjangan, int bonus, int denda) {
         this.nama = nama;
         this.nik = nik;
         this.gajiPokok = gaji;
