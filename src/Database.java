@@ -8,10 +8,6 @@
  *
  * @author gunka
  */
-public class MainData {
-    
-    public static void main(String[] args) {
-        Database database = new Database();
-    }
+public class Database {
     
 }
