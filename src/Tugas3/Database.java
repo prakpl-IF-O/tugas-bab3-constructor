@@ -227,6 +227,95 @@ public class Database {
                 }
             }
         }
-  
+        if ("gaji pokok".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI GAJI POKOK "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < gajiPokok.length; d++) {
+                    if (gajiPokok[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("Tunjangan".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI TUNJANGAN BULANAN "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < tunjangan.length; d++) {
+                    if (tunjangan[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("bonus".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI BONUS "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < bonus.length; d++) {
+                    if (bonus[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("denda".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI DENDA BULANAN "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < denda.length; d++) {
+                    if (denda[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }
+     if ("gaji pokok".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI GAJI POKOK "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < gajiPokok.length; d++) {
+                    if (gajiPokok[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("Tunjangan".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI TUNJANGAN BULANAN "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < tunjangan.length; d++) {
+                    if (tunjangan[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("bonus".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI BONUS "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < bonus.length; d++) {
+                    if (bonus[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }else if ("denda".equals(columnName)) {
+            if (">=".equals(OperasiHitung)) {
+                System.out.println("            DATA PEGAWAI BERDASARKAN DARI DENDA BULANAN "+OperasiHitung+" "+ value);
+                System.out.println("------------------------------------------------------------------");
+                System.out.printf("%-10s%-12s%-14s%-16s%-10s%-10s\n", "NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+                for (int d = 0; d < denda.length; d++) {
+                    if (denda[d] >= value) {
+                        System.out.printf("%-10s%-12s%-14d%-16d%-10d%-10d\n", nik[d], namaKaryawan[d], gajiPokok[d], tunjangan[d], bonus[d], denda[d]);
+                    }
+                }
+            }
+        }  
 }
 }
