@@ -89,10 +89,176 @@ public class DataBase {
         System.out.println(" ");
     }
     
+    public void get(String columnName, String operator, int value){
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("\t \t DATA BASE KARYAWAN");
+        System.out.println("-----------------------------------------------------------");
+        if (columnName == "Gaji Pokok"){
+            if (operator == "<"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI GAJI POKOK < " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<gajiPokok.length; i++){
+                    if (gajiPokok[i] < value ){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == "<="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI GAJI POKOK <= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<gajiPokok.length; i++){
+                    if (gajiPokok[i] <= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    }
+                }
+            } else if (operator == ">"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI GAJI POKOK > " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<gajiPokok.length; i++){
+                    if (gajiPokok[i]>value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == ">="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI GAJI POKOK >= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<gajiPokok.length; i++){
+                    if (gajiPokok[i] >= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } 
+        
+        } else if (columnName == "Tunjangan"){
+            if (operator == "<"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI TUNJANGAN < " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<tunjangan.length; i++){
+                    if (tunjangan[i] < value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == "<="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI TUNJANGAN <= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<tunjangan.length; i++){
+                    if (tunjangan[i] <= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == ">"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI TUNJANGAN > " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<tunjangan.length; i++){
+                    if (tunjangan[i] > value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == ">="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI TUNJANGAN >= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<tunjangan.length; i++){
+                    if (tunjangan[i] >= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            }
+        }
+        
+        else if (columnName == "Bonus"){
+            if (operator == "<"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI BONUS < " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<bonus.length; i++){
+                    if (bonus[i] < value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == "<="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI BONUS <= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<bonus.length; i++){
+                    if (bonus[i] <= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == ">"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI BONUS > " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<bonus.length; i++){
+                    if (bonus[i] > value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }  
+            } else if (operator == ">="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI BONUS >= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<bonus.length; i++){
+                    if (bonus[i] >= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            }
+        } 
+        
+        else if (columnName == "Denda"){
+            if (operator == "<"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI DENDA < " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<denda.length; i++){
+                    if (denda[i] < value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == "<="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI DENDA <= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<denda.length; i++){
+                    if (denda[i] <= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            } else if (operator == ">"){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI DENDA > " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<denda.length; i++){
+                    if (denda[i] > value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }  
+            } else if (operator == ">="){
+                System.out.println("DATA KARYAWAN YANG MEMILIKI DENDA >= " +value);
+                System.out.println("-----------------------------------------------------------");
+                System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+                for (int i=0; i<denda.length; i++){
+                    if (denda[i] >= value){
+                        System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                    } 
+                }
+            }
+        } 
+        System.out.println("-----------------------------------------------------------");
+        System.out.println(" ");
+    }
+}    
     
     
     
     
     
 
-}
+
