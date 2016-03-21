@@ -8,7 +8,7 @@ public class Database {
     private int Bonus [] = {500, 500, 300, 600, 500, 450, 500, 500, 500, 200};
     private int Denda [] = {200, 200, 375, 200,300, 250, 200, 300, 200, 200};
     
-    public void get(){
+    public void get(){ 
         System.out.println("\t \tDATABASE KARYAWAN \n=============================================");
         System.out.printf("%s%15s%15s%15s%15s%15s\n","NIK", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
         for (int a=0; a<NIK.length; a++){
@@ -24,5 +24,39 @@ public class Database {
         }
         }System.out.println();
     }
+    public void get(String kolom, int hasil){
+        System.out.println("  DATA KARYAWAN BERDASARKAN "+kolom+" "+hasil+"\n==============================================");
+        if (kolom.equalsIgnoreCase("Gaji Pokok")){
+           for (int a=0; a<NIK.length; a++){
+                if (GajiPokok[a]==hasil){
+                System.out.printf("%d%15s%15d%15d%15d%15d\n",NIK[a],Nama[a],GajiPokok[a],Tunjangan[a],Bonus[a],Denda[a]);
+                }
+        }
+        }
+        else if (kolom.equalsIgnoreCase("Tunjangan")){
+            for (int a=0; a<NIK.length; a++){
+                if (Tunjangan[a]==hasil){
+                System.out.printf("%d%15s%15d%15d%15d%15d\n",NIK[a],Nama[a],GajiPokok[a],Tunjangan[a],Bonus[a],Denda[a]);
+            }
+          }
+        }
+        else if (kolom.equalsIgnoreCase("Bonus")){
+            for (int a=0; a<NIK.length; a++){
+                if (Bonus[a]==hasil){
+                System.out.printf("%d%15s%15d%15d%15d%15d\n",NIK[a],Nama[a],GajiPokok[a],Tunjangan[a],Bonus[a],Denda[a]);
+            }
+          }
+        }
+        else if (kolom.equalsIgnoreCase("Denda")){
+            for (int a=0; a<NIK.length; a++){
+                if (Denda[a]==hasil){
+                System.out.printf("%d%15s%15d%15d%15d%15d\n",NIK[a],Nama[a],GajiPokok[a],Tunjangan[a],Bonus[a],Denda[a]);
+            }
+          }
+        }
+        System.out.println();
+        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+        System.out.println();
+   }
 }
 }
