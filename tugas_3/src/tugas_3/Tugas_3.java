@@ -18,7 +18,7 @@ package tugas_3;
 public class Tugas_3 {
 private String[] Nama = {"Paijo", "Lala", "Lulu", "Sabar", "Sule", "Paiman", "Ponimin", "Sutiman", "Raja", "Paijo"};
     
-     private int[][] DataGAJI = {
+     private int[][] gaji = {
          {101, 2000, 1000, 500, 200},
          {102, 1750, 900, 500, 200},
          {103, 2150, 1000, 300, 375},
@@ -31,31 +31,36 @@ private String[] Nama = {"Paijo", "Lala", "Lulu", "Sabar", "Sule", "Paiman", "Po
          {110, 2250, 1000, 200, 200}
      };
 
-    public Tugas_3(int nik, String nama, int gajiPokok, int tunjangan, int bonus, int denda) {
-        nik = nik;
-        gajiPokok = gajiPokok;
-        tunjangan = tunjangan;
-        bonus = bonus;
-        denda = denda;
-        nama = nama;
-    }
-
-    public void Data() {
+    
+    public void Datagaji() {
          System.out.println("   DATA KARYAWAN   ");
          System.out.println("--------------------------------");
          System.out.printf("%s %9s %17s %15s %12s %15s \n",
                  "Nik", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
          
          for (int a = 0; a < Nama.length; a++) {
-             System.out.print(DataGAJI[a][0] + "\t");
+             System.out.print(gaji[a][0] + "\t");
              System.out.print(Nama[a] + "\t\t");
            
              for (int s = 1; s < 5; s++) {
-                 System.out.print(DataGAJI[a][s] + "\t\t");
+                 System.out.print(gaji[a][s] + "\t\t");
              }
              System.out.println();
          }
          System.out.println("\n");
      }
-
+public void DataX(int Nik) {
+         System.out.println("----------------------------------------------------------------------------");
+         System.out.println("Data Karyawan dengan NIK X");
+         for (int a = 0; a < Nama.length; a++) {
+             if (Nik == gaji[a][0]) {
+                 System.out.println("Nik        : " + gaji[a][0]);
+                 System.out.println("Nama       : " + Nama[a]);
+                 System.out.println("Gaji Pokok : " + gaji[a][1]);
+                 System.out.println("Tunjangan  : " + gaji[a][2]);
+                 System.out.println("Bonus      : " + gaji[a][3]);
+                 System.out.println("Denda      : " + gaji[a][4]);
+             }
+         }
+     }
 }
