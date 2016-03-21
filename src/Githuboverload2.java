@@ -31,5 +31,14 @@ public class Githuboverload2 {
             go[i].display();
         }
     }
+    public void get(int nik) {
+        data();
+        for (int i = 0; i < go.length; i++) {
+            if (nik == go[i].getNik()) {
+                go[i].display();
+                break;
+            }
+        }
+    }
 
 }
