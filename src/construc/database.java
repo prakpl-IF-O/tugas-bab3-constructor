@@ -19,4 +19,12 @@ public class database {
     int[] denda = {200, 200, 375, 300, 200, 200, 200, 300, 300, 200};
 
 }
+  public void get() {
+        System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+        System.out.println("-----------------------------------------------------");
+        for (int i = 0; i < 10; i++) {
+            System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+        }
+    }
 
+ 
