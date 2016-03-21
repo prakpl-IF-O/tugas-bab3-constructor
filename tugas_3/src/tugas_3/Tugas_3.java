@@ -18,15 +18,15 @@ package tugas_3;
 public class Tugas_3 {
 
     private int nik, gajiPokok, tunjangan, bonus, denda;
-    private String nama;
+    private String nama; 
 
     public Tugas_3(int nik, String nama, int gajiPokok, int tunjangan, int bonus, int denda) {
-        this.nik = nik;
-        this.gajiPokok = gajiPokok;
-        this.tunjangan = tunjangan;
-        this.bonus = bonus;
-        this.denda = denda;
-        this.nama = nama;
+        nik = nik;
+        gajiPokok = gajiPokok;
+        tunjangan = tunjangan;
+        bonus = bonus;
+        denda = denda;
+        nama = nama;
     }
 
     public int getNik() {
@@ -34,27 +34,27 @@ public class Tugas_3 {
     }
 
     public void setNik(int nik) {
-        this.nik = nik;
+        nik = nik;
     }
 
     public void setGajiPokok(int gajiPokok) {
-        this.gajiPokok = gajiPokok;
+        gajiPokok = gajiPokok;
     }
 
     public void setTunjangan(int tunjangan) {
-        this.tunjangan = tunjangan;
+        tunjangan = tunjangan;
     }
 
     public void setBonus(int bonus) {
-        this.bonus = bonus;
+        bonus = bonus;
     }
 
     public void setDenda(int denda) {
-        this.denda = denda;
+        denda = denda;
     }
 
     public void setNama(String nama) {
-        this.nama = nama;
+        nama = nama;
     }
 
     public int getGajiPokok() {
