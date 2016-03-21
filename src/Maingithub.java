@@ -17,7 +17,7 @@ public class Maingithub {
      
   String[]karyawan3={"Nik : 103 ","Nama : Lulu ","Gaji pokok :2150","tunjangan: 1000 ","bonus : 300","denda :375 "};  
        
-  String[]karyawan4={"Nik : 101 ","Nama : Sabar ","Gaji pokok :1500","tunjangan: 750 ","bonus : 600","denda :200 "};  
+  String[]karyawan4={"Nik : 104 ","Nama : Sabar ","Gaji pokok :1500","tunjangan: 750 ","bonus : 600","denda :200 "};  
        
   String[]karyawan5={"Nik: 105","Nama : Sule ","Gaji Pokok : 1500 ","tunjangan : 750","bonus : 600","denda : 200"};
   
@@ -69,26 +69,21 @@ public class Maingithub {
     }
     }
    void getId (){
-       System.out.println("----------------------");
-       System.out.println(karyawan1[1]);
-       System.out.println(karyawan2[1]);
-       System.out.println(karyawan3[1]);
-       System.out.println(karyawan4[1]);
-       System.out.println(karyawan5[1]);
-       System.out.println(karyawan6[1]);
-       System.out.println(karyawan7[1]);
-       System.out.println(karyawan8[1]);
-       System.out.println(karyawan9[1]);
-       System.out.println(karyawan10[1]);
-       System.out.println("---------------------");
-       
-   }   
-   
-   void gett(){
-       System.out.println(karyawan1);
+       System.out.println("");
+         for (int i=0; i<karyawan4.length; i++){
+            System.out.println(karyawan4[i]);
+     
+         }
    }
+   void Gett(){
+        
+   }
+}
+   
+   
      
-  
-     } 
 
-     
+   
+   
+   
+   
