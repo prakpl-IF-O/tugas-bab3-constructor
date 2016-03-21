@@ -109,4 +109,27 @@ public class GITHUB3 {
         System.out.println("Nik : " + NIK7);
 
     }
+    
+       public static void DbNama() {
+        String Nama1 = "Andi", Nama2 = "Ando", Nama3 = "Andu", Nama4 = "Anda", Nama5 = "Putri", Nama6 = "Emma", Nama7 = "Watson";
+        System.out.println("Nama : " + Nama1);
+        System.out.println("Nama : " + Nama2);
+        System.out.println("Nama : " + Nama3);
+        System.out.println("Nama : " + Nama4);
+        System.out.println("Nama : " + Nama5);
+        System.out.println("Nama : " + Nama6);
+        System.out.println("Nama : " + Nama7);
+
+    }
+
+    public static void DbGajiTotal() {
+        int GP1 = 1000, GP2 = 1023, GP3 = 982, GP4 = 1439, GP5 = 2102, GP6 = 2000, GP7 = 1093;
+        System.out.println("Gaji Pokok : " + GP1);
+        System.out.println("Gaji Pokok : " + GP2);
+        System.out.println("Gaji Pokok : " + GP3);
+        System.out.println("Gaji Pokok : " + GP4);
+        System.out.println("Gaji Pokok : " + GP5);
+        System.out.println("Gaji Pokok : " + GP6);
+        System.out.println("Gaji Pokok : " + GP7);
+    }
 }
