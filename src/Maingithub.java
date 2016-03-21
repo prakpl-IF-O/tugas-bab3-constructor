@@ -32,7 +32,7 @@ public class Maingithub {
   String[]karyawan10={"Nik :110","Nama : Harry ","Gaji Pokok : 2250","tunjangan : 1000","bonus :200","denda : 200"};
   
      public void get(){
-  
+   System.out.println("---------DATA KARYAWAN--------- ");
    for (int i=0; i<karyawan1.length; i++){
             System.out.println(karyawan1[i]);
     }
@@ -66,24 +66,29 @@ public class Maingithub {
     }
          for (int i=0; i<karyawan10.length; i++){
             System.out.println(karyawan10[i]);
+            
     }
+         System.out.println("------------------------");
+         System.out.println();
     }
    void getId (int id){
-       System.out.println("");
+       System.out.println("--------ID KARYAWAN--------");
          for (int i=0; i<karyawan4.length; i++){
             System.out.println(karyawan4[i]);
-     
+             
          }
+       System.out.println("---------------------------");  
    }
+   
    void Get(String a,int b){
        
        System.out.println();
        System.out.println("karyawan dengan tunjangan 1000 "+karyawan9[1]);
-       
+       System.out.println();
    }
    void geT (String a,String b,int c){
            if (a==  "< : 1000")
-        
+        System.out.println("KARYAWAN dengan tunjangan < 1000");
         for (int i=0; i<karyawan2.length; i++){
             System.out.println(karyawan2[i]);}
         for (int i=0; i<karyawan4.length; i++){
@@ -92,17 +97,19 @@ public class Maingithub {
             System.out.println(karyawan5[i]);}
         for (int i=0; i<karyawan6.length; i++){
             System.out.println(karyawan6[i]);  }      
-       System.out.println("");
-           
+       
+       System.out.println("----------------------------------");    
    }
    void GET (String a,String b,int c){
          System.out.println();
+       System.out.println("Karyawan dengan bonus > 500");  
         for (int i=0; i<karyawan4.length; i++){
             System.out.println(karyawan4[i]);}
         for (int i=0; i<karyawan5.length; i++){
             System.out.println(karyawan5[i]);}
            
-       System.out.println("");
+       System.out.println("----------------------------");
+       System.out.println();
    }
 }
    
