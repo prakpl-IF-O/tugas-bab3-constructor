@@ -166,6 +166,125 @@ public class Database {
             System.out.println("");
             System.out.println("");
         } 
+        else if (Data1 == "TUNJANGAN") {
+            if (ii == "<") {
+                System.out.println("=============================================================================");
+                System.out.println("             DATA KARYAWAN DENGAN TUNJANGAN < " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] < value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">") {
+                System.out.println("=============================================================================");
+                System.out.println("             DATA KARYAWAN DENGAN TUNJANGAN > " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] > value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == "<=") {
+                System.out.println("=============================================================================");
+                System.out.println("             DATA KARYAWAN DENGAN TUNJANGAN <= " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] <= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">=") {
+                System.out.println("=============================================================================");
+                System.out.println("               DATA KARYAWAN DENGAN TUNJANGAN >= " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] >= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            }
+            System.out.println("");
+            System.out.println("");
+        } 
+        else if (Data1 == "BONUS") {
+            if (ii == "<") {
+                System.out.println("=============================================================================");
+                System.out.println("              DATA KARYAWAN DENGAN BONUS < " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] < value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">") {
+                System.out.println("=============================================================================");
+                System.out.println("              DATA KARYAWAN DENGAN BONUS > " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] > value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == "<=") {
+                System.out.println("=============================================================================");
+                System.out.println("             DATA KARYAWAN DENGAN BONUS <= " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] <= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">=") {
+                System.out.println("=============================================================================");
+                System.out.println("               DATA KARYAWAN DENGAN BONUS >= " + value);
+                System.out.println("=============================================================================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] >= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            }
+            
+        } 
         
     }
 }
