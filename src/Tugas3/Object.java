@@ -26,6 +26,14 @@ public class Object {
              if (b.getNik().equalsIgnoreCase(a)){
                  b.Display();
              }
+             
+        }
+    }
+    public void get(String z,String x,int c){
+        for (ClassObject d:b){
+            if (z.equalsIgnoreCase("Tunjangan"))
+            
+        
         }
     }
 }

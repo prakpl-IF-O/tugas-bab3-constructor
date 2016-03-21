@@ -32,5 +32,25 @@ public class ClassObject {
     public String getNik() {
         return nik;
     }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public double getGaji_pokok() {
+        return gaji_pokok;
+    }
+
+    public double getTunjangan() {
+        return tunjangan;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public double getDenda() {
+        return denda;
+    }
     
 }
