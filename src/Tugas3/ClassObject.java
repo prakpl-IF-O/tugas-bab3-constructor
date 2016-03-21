@@ -26,8 +26,11 @@ public class ClassObject {
         System.out.println("Tunjangan"+tunjangan);
         System.out.println("Bonus"+bonus);
         System.out.println("Denda"+denda);
+        System.out.println("");
     }
-    public void get (){
-       
+
+    public String getNik() {
+        return nik;
     }
+    
 }

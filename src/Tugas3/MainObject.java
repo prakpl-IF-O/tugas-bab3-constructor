@@ -15,8 +15,9 @@ public class MainObject {
     db.Data("109","Raja",1000,1000,500,200);
     db.Data("110","Harry",2250,1000,200,200);
 
+db.get();
 
-
+db.get("110");
 
 
     }
