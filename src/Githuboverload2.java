@@ -25,5 +25,11 @@ public class Githuboverload2 {
        
 
     }
+    public void get(){
+        data();
+        for (int i = 0; i < go.length; i++) {
+            go[i].display();
+        }
+    }
 
 }
