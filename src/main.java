@@ -17,7 +17,8 @@ public class main {
         data d1=new data();
         d1.get();
         d1.get("4");
-        d1.get("gaji pokok", 1250);
+        d1.get("gaji pokok", 2000);
+        d1.get("bonus", "<", 500);
     }
     
 }
