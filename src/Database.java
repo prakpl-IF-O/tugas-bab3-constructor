@@ -283,8 +283,57 @@ public class Database {
                     }
                 }
             }
-            
+            System.out.println("");
+            System.out.println("");
         } 
-        
+        else if (Data1 == "DENDA") {
+            if (ii == "<") {
+                System.out.println("======================DATA KARYAWAN DENGAN DENDA < " + value + "====================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] < value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">") {
+                System.out.println("======================DATA KARYAWAN DENGAN DENDA > " + value + "====================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] > value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == "<=") {
+                System.out.println("======================DATA KARYAWAN DENGAN DENDA <= " + value + "====================");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] <= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+
+                    }
+                }
+            } 
+            else if (ii == ">=") {
+                System.out.println("============================DATA KARYAWAN DENGAN DENDA >= " + value + "==============");
+                System.out.print("NIK\t" + "NAMA\t" + "GAJI POKOK\t" + "TUNJANGAN\t" + "BONUS\t" + "DENDA\t\n");
+                System.out.println("=============================================================================");
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] >= value) {
+                        System.out.print(nik[i] + "\t" + nama[i] + "\t" + gajiPokok[i] + "\t\t" + tunjangan[i] + "\t\t" + bonus[i] + "\t" + denda[i] + "\t\n");
+                        System.out.println("=============================================================================");
+                    }
+                }
+            }
+        }
     }
 }
