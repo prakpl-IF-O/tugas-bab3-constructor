@@ -4,6 +4,7 @@ public class maindataBase {
         DataBase db = new DataBase ();
         db.get();
         db.get(104);
+        db.get("Tunjangan", 2000);
     }
     
 }
