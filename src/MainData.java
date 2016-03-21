@@ -9,16 +9,14 @@
  * @author gunka
  */
 public class MainData {
-    
-    public static void main(String[] args) {       
+
+    public static void main(String[] args) {
         Database data = new Database();
-        
+
         data.get();
         data.get(104);
-        data.get("gajiPokok",2000);
-        data.get("bonus",">",450);
-      
+        data.get("gajiPokok", 2000);
+        data.get("bonus", ">", 450);
+
     }
-   
-    
 }
