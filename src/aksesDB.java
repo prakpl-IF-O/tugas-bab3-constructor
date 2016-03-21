@@ -17,7 +17,7 @@ public class aksesDB {
     public void get(){
         data();
         for (int i = 0; i < db.length; i++) {
-            displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+            displayData(i);
         }
     }
     
@@ -25,7 +25,7 @@ public class aksesDB {
         data();
         for (int i = 0; i < db.length; i++) {
             if(nik == db[i].getNik()){
-                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                displayData(i);
                 break;
             }
         }
@@ -38,25 +38,25 @@ public class aksesDB {
             case "gaji pokok":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getGajiPokok()){
-                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                        displayData(i);
                     }
                 }
             case "tunjangan":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getTunjangan()){
-                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                        displayData(i);
                     }
                 }
             case "bonus":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getBonus()){
-                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                        displayData(i);
                     }
                 }
             case "denda":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getDenda()){
-                        displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                        displayData(i);
                     }
                 }
             default:
@@ -72,25 +72,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getGajiPokok() > value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getGajiPokok() < value){
-                               displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                               displayData(i);
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getGajiPokok() >= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getGajiPokok() <= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     default:
@@ -100,25 +100,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getTunjangan() > value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getTunjangan() < value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getTunjangan() >= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getTunjangan() <= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     default:
@@ -128,25 +128,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getBonus() > value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getBonus() < value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getBonus() >= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getBonus() <= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     default:
@@ -156,25 +156,25 @@ public class aksesDB {
                     case ">":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getDenda() > value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getDenda() < value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case ">=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getDenda() >= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     case "<=":
                         for (int i = 0; i < db.length; i++) {
                             if(db[i].getDenda() <= value){
-                                displayFormat(db[i].getNik(),db[i].getNama(),db[i].getGajiPokok(),db[i].getTunjangan(),db[i].getBonus(),db[i].getDenda());
+                                displayData(i);
                             }
                         }break;
                     default:
@@ -183,13 +183,13 @@ public class aksesDB {
         }
     }
     
-    private void displayFormat(int a, String b, int c, int d, int e, int f){
-        System.out.println("NIK        : "+a);
-        System.out.println("Nama       : "+b);
-        System.out.println("Gaji Pokok : "+c);
-        System.out.println("Tunjangan  : "+d);
-        System.out.println("Bonus      : "+e);
-        System.out.println("Denda      : "+f);
+    private void displayData(int i){
+        System.out.println("NIK        : "+db[i].getNik());
+        System.out.println("Nama       : "+db[i].getNama());
+        System.out.println("Gaji Pokok : "+db[i].getGajiPokok());
+        System.out.println("Tunjangan  : "+db[i].getTunjangan());
+        System.out.println("Bonus      : "+db[i].getBonus());
+        System.out.println("Denda      : "+db[i].getDenda());
         System.out.println("~~~~~~~~~~~~~~~~~~~~~");
     }
     
