@@ -131,6 +131,15 @@ public class data {
                 }
             }
         }
+            if(operator.equals(">=")){
+            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+            for (int i = 0; i < 10; i++) {
+                if (tunjangan[i] >= value) {
+                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+    }
 
 }
 }
