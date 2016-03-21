@@ -42,7 +42,29 @@ public class main {
                 System.out.print("Masukan batas angka : ");
                 batas=masukan.nextInt();
                 db.get(menus, batas); break;
-
+            case 3:
+                System.out.println("");
+                System.out.println("Masukan Pilihan");
+                System.out.println("1. gaji Pokok");
+                System.out.println("2. Tunjangan");
+                System.out.println("3. Bonus");
+                System.out.println("4. Denda");
+                System.out.print("Pilih : ");
+                menus=masukan.next();
+                System.out.println("Masukan Operator (<,<=,>,>=)");
+                String operator=masukan.next();
+                System.out.print("Masukan batas angka : ");
+                batas=masukan.nextInt();
+                db.get(menus, operator, batas); break;
+            case 4:
+                break;
+            default:
+                System.out.println("Perintah Tidak di Temukan");
+        }
+        
+        
+        
+    }while(menu!=4);
 }
 }        
     
