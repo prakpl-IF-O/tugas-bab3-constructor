@@ -9,7 +9,8 @@
  * @author user
  */
 public class Githuboverload2 {
-        Githuboverload1[] go = new Githuboverload1[10];
+
+    Githuboverload1[] go = new Githuboverload1[10];
 
     public void data() {
         go[0] = new Githuboverload1(101, "paijo", 2000, 1000, 500, 200);
@@ -22,15 +23,16 @@ public class Githuboverload2 {
         go[7] = new Githuboverload1(108, "weka", 1750, 1000, 750, 500);
         go[8] = new Githuboverload1(109, "budi", 2500, 400, 1000, 200);
         go[9] = new Githuboverload1(110, "cahyo", 1750, 800, 500, 200);
-       
 
     }
-    public void get(){
+
+    public void get() {
         data();
         for (int i = 0; i < go.length; i++) {
             go[i].display();
         }
     }
+
     public void get(int nik) {
         data();
         for (int i = 0; i < go.length; i++) {
@@ -40,6 +42,7 @@ public class Githuboverload2 {
             }
         }
     }
+
     public void get(String kolom, int nilai) {
         switch (kolom) {
             case "Denda":
@@ -65,11 +68,55 @@ public class Githuboverload2 {
                 break;
             case "Gajipokok":
                 for (int i = 0; i < go.length; i++) {
-                    if ( nilai == go[i].getGajipokok()){
+                    if (nilai == go[i].getGajipokok()) {
                         go[i].display();
                     }
                 }
         }
     }
 
+    public void get(String kolom, String n, int x) {
+        switch (kolom) {
+            case "Denda":
+                switch (n) {
+                    case ">":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getDenda() > x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case ">=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getDenda() >= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getDenda() < x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getDenda() <= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getDenda() == x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                }
+                
+
+        }
+    }
 }
