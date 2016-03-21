@@ -115,7 +115,45 @@ public class Githuboverload2 {
                         }
                         break;
                 }
-                
+                break;
+            case "Tunjangan":
+                switch (n) {
+                    case ">":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getTunjangan() > x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case ">=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getTunjangan() >= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getTunjangan() < x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getTunjangan() <= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getTunjangan() == x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                }
 
         }
     }
