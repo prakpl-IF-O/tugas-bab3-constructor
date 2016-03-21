@@ -53,3 +53,38 @@ public class database {
                 }
             }
         }
+   if (columnName.equals("3")) {
+            for (int i = 0; i < 10; i++) {
+            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+                if (bonus[i] == value) {
+                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+
+        if (columnName.equals("4")) {
+            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+            for (int i = 0; i < 10; i++) {
+                if (denda[i] == value) {    
+                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+    }   if (columnName.equals("3")) {
+            for (int i = 0; i < 10; i++) {
+            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+                if (bonus[i] == value) {
+                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+
+        if (columnName.equals("4")) {
+            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+            for (int i = 0; i < 10; i++) {
+                if (denda[i] == value) {    
+                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+                }
+            }
+        }
+    }
