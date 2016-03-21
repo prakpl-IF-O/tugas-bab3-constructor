@@ -60,7 +60,61 @@ public class NewClass {
     public int getDenda() {
         return denda;
     }
-    
+
+    public void get() {
+        for (int i = 0; i < 10; i++) {
+            Display(i);
+        }
+    }
+
+    public void get(int id) {
+
+        for (int i = 0; i < 10; i++) {
+            if (id == data[i].getNik()) {
+                Display(i);
+                break;
+            }
+        }
+    }
+
+    public void get(String columnName, int value) {
+        switch (columnName) {
+            case "gajipokok":
+                for (int i = 0; i < 10; i++) {
+                    if (data[i].getGajipokok() == value) {
+                        Display(i);
+                    }
+                }
+                break;
+
+            case "tunjangan":
+                for (int i = 0; i < 10; i++) {
+                    if (data[i].getTunjangan() == value) {
+                        Display(i);
+                    }
+
+                }
+                break;
+
+            case "bonus":
+                for (int i = 0; i < 10; i++) {
+                    if (data[i].getBonus() == value) {
+                        Display(i);
+                    }
+                }
+                break;
+            case "denda":
+                for (int i = 0; i < 10; i++) {
+                    if (data[i].getDenda() == value) {
+                        Display(i);
+                    }
+
+                }
+                break;
+        }
+
+    }
+
     public void Display(int i) {
         System.out.println(data[i].getNik());
         System.out.println(data[i].getNama());
