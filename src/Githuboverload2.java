@@ -63,6 +63,12 @@ public class Githuboverload2 {
                     }
                 }
                 break;
+            case "Gajipokok":
+                for (int i = 0; i < go.length; i++) {
+                    if ( nilai == go[i].getGajipokok()){
+                        go[i].display();
+                    }
+                }
         }
     }
 
