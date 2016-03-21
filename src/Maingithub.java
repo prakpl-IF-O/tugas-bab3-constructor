@@ -75,9 +75,16 @@ public class Maingithub {
      
          }
    }
-   void Get(String a,String n, int c){
+   void GetF(String a,String n, int c){
        
+       System.out.println();
+       System.out.println("karyawan ke 9 dengan tunjangan"+karyawan9[3]);
        
+   }
+   void getT (String a,String b,int c){
+       System.out.println();
+       if 
+           
    }
 }
    
