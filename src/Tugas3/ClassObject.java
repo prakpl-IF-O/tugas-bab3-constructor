@@ -27,4 +27,7 @@ public class ClassObject {
         System.out.println("Bonus"+bonus);
         System.out.println("Denda"+denda);
     }
+    public void get (){
+       
+    }
 }
