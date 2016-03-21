@@ -7,7 +7,11 @@ public class NewClass {
     public int tunjangan;
     public int bonus;
     public int denda;
-    NewClass data[] = new NewClass[9];
+    NewClass data[] = new NewClass[10];
+
+    public NewClass() {
+
+    }
 
     public void data() {
         data[0] = new NewClass(101, "Paijo", 2000, 1000, 500, 200);
@@ -62,14 +66,15 @@ public class NewClass {
     }
 
     public void get() {
-        for (int i = 0; i < 10; i++) {
+        data();
+        for (int i = 0; i < data.length; i++) {
             Display(i);
         }
     }
 
     public void get(int id) {
-
-        for (int i = 0; i < 10; i++) {
+        data();
+        for (int i = 0; i < data.length; i++) {
             if (id == data[i].getNik()) {
                 Display(i);
                 break;
@@ -78,9 +83,10 @@ public class NewClass {
     }
 
     public void get(String columnName, int value) {
+        data();
         switch (columnName) {
             case "gajipokok":
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < data.length; i++) {
                     if (data[i].getGajipokok() == value) {
                         Display(i);
                     }
@@ -88,7 +94,7 @@ public class NewClass {
                 break;
 
             case "tunjangan":
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < data.length; i++) {
                     if (data[i].getTunjangan() == value) {
                         Display(i);
                     }
@@ -97,14 +103,14 @@ public class NewClass {
                 break;
 
             case "bonus":
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < data.length; i++) {
                     if (data[i].getBonus() == value) {
                         Display(i);
                     }
                 }
                 break;
             case "denda":
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < data.length; i++) {
                     if (data[i].getDenda() == value) {
                         Display(i);
                     }
@@ -116,137 +122,138 @@ public class NewClass {
     }
 
     public void get(String columnName, String operator, int value) {
+        data();
         switch (columnName) {
             case "gajipokok":
                 switch (operator) {
                     case ">":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getGajipokok() > value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getGajipokok() < value) {
                                 Display(i);
                             }
                         }
                         break;
                     case ">=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getGajipokok() >= value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getGajipokok() <= value) {
                                 Display(i);
                             }
                         }
                         break;
                 }
-            break;
+                break;
 
             case "tunjangan":
                 switch (operator) {
                     case ">":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getTunjangan() > value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getTunjangan() < value) {
                                 Display(i);
                             }
                         }
                         break;
                     case ">=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getTunjangan() >= value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getTunjangan() <= value) {
                                 Display(i);
                             }
                         }
                         break;
                 }
-            break;
+                break;
 
             case "bonus":
                 switch (operator) {
                     case ">":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getBonus() > value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getBonus() < value) {
                                 Display(i);
                             }
                         }
                         break;
                     case ">=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getBonus() >= value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getBonus() <= value) {
                                 Display(i);
                             }
                         }
                         break;
                 }
-            break;
+                break;
             case "denda":
                 switch (operator) {
                     case ">":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getDenda() > value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getDenda() < value) {
                                 Display(i);
                             }
                         }
                         break;
                     case ">=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getDenda() >= value) {
                                 Display(i);
                             }
                         }
                         break;
                     case "<=":
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < data.length; i++) {
                             if (data[i].getDenda() <= value) {
                                 Display(i);
                             }
                         }
                         break;
                 }
-            break;
+                break;
         }
     }
 
