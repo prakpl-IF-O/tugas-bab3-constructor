@@ -23,9 +23,10 @@ public class main {
         System.out.println("2. Cari daftar yang sama dengan n");
         System.out.println("3. Cari daftar yang berbeda dengan n");
         System.out.println("4. Keluar");
+            System.out.println("---------------------------");
         System.out.print("Pilih : ");
         menu=masukan.nextInt();
-       
+        
         switch(menu){
             case 1:
                 System.out.println("");

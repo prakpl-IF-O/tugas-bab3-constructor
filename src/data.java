@@ -205,7 +205,7 @@ public class data {
                 if (denda[i] >= value) {
                     System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
                 }
-            }
+            } 
         }
     }
 }
