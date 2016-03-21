@@ -49,21 +49,45 @@ public class OMC {
                 }
                 System.out.println(" ");
     }
-     public void get(int id){
+    public void get(int id){
         System.out.println("\t\tDATA KARYAWAN SESUAI NIK YANG DIMINTA");
         System.out.println(" ");
         for(int y = 0 ; y < NAMA.length ; y++){
             
             if(id == basedata[y][0]){
-                System.out.println("Nik             : " + basedata[y][0]);
+                System.out.println("NIK             : " + basedata[y][0]);
                 System.out.println("Nama            : " + NAMA    [y]   );
-                System.out.println("Gaji Pokok      : " + basedata[y][4]);
-                System.out.println("Tunjangan       : " + basedata[y][3]);
-                System.out.println("Bonus           : " + basedata[y][2]);
-                System.out.println("Denda           : " + basedata[y][1]);
+                System.out.println("Gaji Pokok      : " + basedata[y][1]);
+                System.out.println("Tunjangan       : " + basedata[y][2]);
+                System.out.println("Bonus           : " + basedata[y][3]);
+                System.out.println("Denda           : " + basedata[y][4]);
             } 
         }
         System.out.println(" ");
+    }
+    public void get(String columnName, int value){
+        System.out.println("\t\tDATA KARYAWAN SESUAI DATA YANG DIMINTA");
+        System.out.println("\t\tDATA YANG DIMINTA" +columnName+ " " +value+ " ");
+        System.out.printf("%s %10s %18s %17s %13s %16s \n", "NIK", "Nama" , "Gaji Pokok" , "Tunjangan" , "Bonus" , "Denda");
+        int CN = 0; 
+        if("Denda".equalsIgnoreCase(columnName)){
+            CN = 4;
+        }else if("Bonus".equalsIgnoreCase(columnName)){
+            CN = 3;
+        }else if("Tunjangan".equalsIgnoreCase(columnName)){
+            CN = 2;
+        }else if("Gaji Pokok".equalsIgnoreCase(columnName)){
+            CN = 1;
+        }
+        for(int x = 0 ; x < NAMA.length ; x++){
+            if(value==basedata[x][CN]){
+                System.out.print(basedata[x][0]+"\t");
+                System.out.print(NAMA[x]+"\t\t");
+                for (int w = 1 ; w < 5 ; w++){
+                    System.out.print(basedata[x][w]+"\t\t");
+                }System.out.println();
+            }
+        }System.out.println("\n");
     }
 }
 
