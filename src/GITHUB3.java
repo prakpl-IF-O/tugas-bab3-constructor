@@ -132,4 +132,37 @@ public class GITHUB3 {
         System.out.println("Gaji Pokok : " + GP6);
         System.out.println("Gaji Pokok : " + GP7);
     }
+    
+     public static void DbGajiTunjangan() {
+        int GT1 = 870, GT2 = 670, GT3 = 300, GT4 = 960, GT5 = 1200, GT6 = 900, GT7 = 400;
+        System.out.println("Gaji Tunjangan : " + GT1);
+        System.out.println("Gaji Tunjangan : " + GT2);
+        System.out.println("Gaji Tunjangan : " + GT3);
+        System.out.println("Gaji Tunjangan : " + GT4);
+        System.out.println("Gaji Tunjangan : " + GT5);
+        System.out.println("Gaji Tunjangan : " + GT6);
+        System.out.println("Gaji Tunjangan : " + GT7);
+    }
+
+    public static void DbBonus() {
+        int Bon1 = 200, Bon2 = 210, Bon3 = 220, Bon4 = 230, Bon5 = 240, Bon6 = 250, Bon7 = 260;
+        System.out.println("Bonus :" + Bon1);
+        System.out.println("Bonus :" + Bon2);
+        System.out.println("Bonus :" + Bon3);
+        System.out.println("Bonus :" + Bon4);
+        System.out.println("Bonus :" + Bon5);
+        System.out.println("Bonus :" + Bon6);
+        System.out.println("Bonus :" + Bon7);
+    }
+
+    public static void DbDenda() {
+        int Den1 = 50, Den2 = 40, Den3 = 50, Den4 = 95, Den5 = 20, Den6 = 15, Den7 = 45;
+        System.out.println("Denda : " + Den1);
+        System.out.println("Denda : " + Den2);
+        System.out.println("Denda : " + Den3);
+        System.out.println("Denda : " + Den4);
+        System.out.println("Denda : " + Den5);
+        System.out.println("Denda : " + Den6);
+        System.out.println("Denda : " + Den7);
+    }
 }
