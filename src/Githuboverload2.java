@@ -40,5 +40,30 @@ public class Githuboverload2 {
             }
         }
     }
+    public void get(String kolom, int nilai) {
+        switch (kolom) {
+            case "Denda":
+                for (int i = 0; i < go.length; i++) {
+                    if (nilai == go[i].getDenda()) {
+                        go[i].display();
+                    }
+                }
+                break;
+            case "Tunjangan":
+                for (int i = 0; i < go.length; i++) {
+                    if (nilai == go[i].getTunjangan()) {
+                        go[i].display();
+                    }
+                }
+                break;
+            case "Bonus":
+                for (int i = 0; i < go.length; i++) {
+                    if (nilai == go[i].getBonus()) {
+                        go[i].display();
+                    }
+                }
+                break;
+        }
+    }
 
 }
