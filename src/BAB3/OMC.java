@@ -25,7 +25,7 @@ public class OMC {
         {110, 2250, 1000, 200, 200}};
     
     public void get(){
-        System.out.println("\t\t\tKESELURUHAN DATA");
+        System.out.println("\t\t\t\tKESELURUHAN DATA");
         String dataawal[][] = {
             {"NIK", "Nama", "Gaji Pokok", "Tunjangan" , "Bonus", "Denda"}, 
             {"101", "Paijo"  ,    "2000"   ,    "1000"   , "500"  , "200"},
@@ -50,7 +50,7 @@ public class OMC {
                 System.out.println(" ");
     }
     public void get(int id){
-        System.out.println("\t\tDATA KARYAWAN SESUAI NIK YANG DIMINTA");
+        System.out.println("\t\t\t\tDATA KARYAWAN SESUAI NIK YANG DIMINTA");
         System.out.println(" ");
         for(int y = 0 ; y < NAMA.length ; y++){
             
@@ -66,28 +66,92 @@ public class OMC {
         System.out.println(" ");
     }
     public void get(String columnName, int value){
-        System.out.println("\t\tDATA KARYAWAN SESUAI DATA YANG DIMINTA");
-        System.out.println("\t\tDATA YANG DIMINTA" +columnName+ " " +value+ " ");
-        System.out.printf("%s %10s %18s %17s %13s %16s \n", "NIK", "Nama" , "Gaji Pokok" , "Tunjangan" , "Bonus" , "Denda");
-        int CN = 0; 
+        System.out.println("\t\t\t\tDATA KARYAWAN SESUAI DATA YANG DIMINTA");
+        System.out.println("\t\t\t\t   DATA YANG DIMINTA " +columnName+ " " +value+ " ");
+        System.out.println(" ");
+        System.out.printf("%s %16s %26s %23s %20s %23s \n", "NIK", "Nama" , "Gaji Pokok" , "Tunjangan" , "Bonus" , "Denda");
+        int t = 0; 
         if("Denda".equalsIgnoreCase(columnName)){
-            CN = 4;
+            t = 4;
         }else if("Bonus".equalsIgnoreCase(columnName)){
-            CN = 3;
+            t = 3;
         }else if("Tunjangan".equalsIgnoreCase(columnName)){
-            CN = 2;
+            t = 2;
         }else if("Gaji Pokok".equalsIgnoreCase(columnName)){
-            CN = 1;
+            t = 1;
         }
         for(int x = 0 ; x < NAMA.length ; x++){
-            if(value==basedata[x][CN]){
-                System.out.print(basedata[x][0]+"\t");
-                System.out.print(NAMA[x]+"\t\t");
+            if(value==basedata[x][t]){
+                System.out.print(basedata[x][0]+"\t\t");
+                System.out.print(NAMA[x]+"\t\t\t");
                 for (int w = 1 ; w < 5 ; w++){
-                    System.out.print(basedata[x][w]+"\t\t");
+                    System.out.print(basedata[x][w]+"\t\t\t");
                 }System.out.println();
             }
         }System.out.println("\n");
+    }
+    public void get(String columnName, String Op, int value){
+        System.out.println("\t\t\tDATA KARYAWAN YANG DITAMPILKAN SESUAI DENGAN DATA YANG DIMINTA");
+        System.out.println("\t\t\t\t    DATA YANG DIMINTA " +columnName+ " " +Op+ " " +value+ " ");
+        System.out.println(" ");
+        System.out.printf("%s %16s %26s %23s %20s %23s \n", "NIK" , "Nama" , "Gaji Pokok" , "Tunjangan" , "Bonus" , "Denda");
+        int t = 0;
+        if("Tunjangan ".equalsIgnoreCase(columnName)){
+            t=2;
+        }else if("Gaji Pokok".equalsIgnoreCase(columnName)){
+            t=1;
+        }else if("Denda".equalsIgnoreCase(columnName)){
+            t=4;
+        }else if("Bonus".equalsIgnoreCase(columnName)){
+            t=3;
+        }
+        switch (Op){
+            case "<":
+                for(int d = 0 ; d < NAMA.length ; d++){
+                    if(basedata[d][t] < value){
+                        System.out.print(basedata[d][0] +"\t\t");
+                        System.out.print(NAMA[d] +"\t\t\t");
+                        for (int h = 1 ; h < 5 ; h++){
+                            System.out.print(basedata[d][h] +"\t\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
+            case "<=":
+                for(int d = 0 ; d < NAMA.length ; d++){
+                    if(basedata[d][t] <= value){
+                        System.out.print(basedata[d][0] +"\t\t");
+                        System.out.print(NAMA[d] +"\t\t\t");
+                        for (int h = 1 ; h < 5 ; h++){
+                            System.out.print(basedata[d][h] +"\t\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
+            case ">":
+                for(int d = 0 ; d < NAMA.length ; d++){
+                    if(basedata[d][t] > value){
+                        System.out.print(basedata[d][0] +"\t\t");
+                        System.out.print(NAMA[d] +"\t\t\t");
+                        for (int h = 1 ; h < 5 ; h++){
+                            System.out.print(basedata[d][h] +"\t\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
+            case ">=":
+                for(int d = 0 ; d < NAMA.length ; d++){
+                    if(basedata[d][t] >= value){
+                        System.out.print(basedata[d][0] +"\t\t");
+                        System.out.print(NAMA[d] +"\t\t\t");
+                        for (int h = 1 ; h < 5 ; h++){
+                            System.out.print(basedata[d][h] +"\t\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
+        }
+        System.out.println("\n");
     }
 }
 

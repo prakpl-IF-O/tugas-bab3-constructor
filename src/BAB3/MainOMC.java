@@ -5,6 +5,8 @@ public class MainOMC {
         OMC d = new OMC();
         d.get();
         d.get(104);
-        d.get("Tunjangan", 2000);
+        d.get("Tunjangan", 1000);
+        d.get("Bonus", "<", 300);
+        d.get("Denda" , ">" , 300);
     }
 }
