@@ -4,32 +4,33 @@ public class Karyawan {
 public Karyawan (){
 }    
 //Konstraktor
-    public Karyawan(int q, int w,int e, int r, int t, String y) {
+    public void Karyawan(int q, String w, int e,int r, int t, int y ) {
         NIK       = q;
-        Gajipokok = w;
-        Tunjangan = e;
-        Bonus     = r;
-        Denda     = t;
-        NamaKar   = y;
+        NamaKar   = w;
+        Gajipokok = e;
+        Tunjangan = r;
+        Bonus     = t;
+        Denda     = y;
+        
     }
 //set
     public void setNIK(int q) {
         NIK = q;
     }
-    public void setGajipokok(int w) {
-        Gajipokok = w;
+    public void setGajipokok(int e) {
+        Gajipokok = e;
     }
-    public void setTunjangan(int e) {
-        Tunjangan = e;
+    public void setTunjangan(int r) {
+        Tunjangan = r;
     }
-    public void setBonus(int r) {
-        Bonus = r;
+    public void setBonus(int t) {
+        Bonus = t;
     }
-    public void setDenda(int t) {
-        Denda = t;
+    public void setDenda(int y) {
+        Denda = y;
     }
-    public void setNamaKar(String y) {
-        NamaKar = y;
+    public void setNamaKar(String w) {
+        NamaKar = w;
     }
     //get
     public int getNIK() {
@@ -50,5 +51,18 @@ public Karyawan (){
     public String getNamaKar() {
         return NamaKar;
     }
+    public void dis(){
+        System.out.println("NIK        : "+NIK);
+        System.out.println("Nama       : "+NamaKar);
+        System.out.println("Gaji Pokok : "+Gajipokok);
+        System.out.println("Tunjangan  : "+Tunjangan);
+        System.out.println("Bonus      : "+Bonus);
+        System.out.println("Denda      : "+Denda);
+        
+    
+    
+    }
+
     
 }
+
