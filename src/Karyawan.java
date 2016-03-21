@@ -41,11 +41,14 @@ public void Data(int Nik){
                 System.out.println("Tunjangan\t     : "+DataGAJI[a][2]);
                 System.out.println("bonus\t\t     : "+DataGAJI[a][3]);
                 System.out.println("denda\t\t     : "+DataGAJI[a][4]);
-            }
+            }       
         }
 }
+public void Data(String Namee, int nilai){
+    System.out.println("");
+        
+        }
 }
-
 
 
 
