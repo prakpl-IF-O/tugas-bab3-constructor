@@ -7,6 +7,18 @@ public class DataBase {
     private int   [] bonus     = {500    ,500   ,300   ,600    ,500   ,450      ,500      ,500      ,500   ,200    };
     private int   [] denda     = {200    ,200   ,375   ,200    ,300   ,250      ,200      ,300      ,200   ,200    };
     
+    public void get(){
+        System.out.println("--------------------------------------------------------");
+        System.out.println("\t \t DATA BASE KARYAWAN");
+        System.out.println("--------------------------------------------------------");
+        System.out.printf("%-7s%-10s%-13s%-13s%-10s%-6s\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+        for (int i=0; i<nik.length; i++){
+            System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+            System.out.println(" ");
+        }
+        System.out.println("--------------------------------------------------------");
+        System.out.println(" ");
+    }
     
 
 }
