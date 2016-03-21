@@ -15,6 +15,7 @@ public class MainData {
         
         data.get();
         data.get(104);
+        data.get("gajiPokok",2000);
       
     }
    

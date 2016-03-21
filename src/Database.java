@@ -36,12 +36,32 @@ public class Database {
     }
 
     public void get(int b) {
+        System.out.println("");
         for (int j = 0; j < a.length; j++) {
             System.out.printf("%-15s", a[j]);
         }
         System.out.println("");
         for (int i = 0; i < nik.length; i++) {
             if (nik[i] == b) {
+                System.out.printf("%-15s", nik[i]);
+                System.out.printf("%-15s", nama[i]);
+                System.out.printf("%-15s", gajiPokok[i]);
+                System.out.printf("%-15s", tunjangan[i]);
+                System.out.printf("%-15s", bonus[i]);
+                System.out.printf("%-15s", denda[i]);
+                System.out.println("");
+            }
+        }
+    }
+        
+    public void get(String c, int b) {
+        System.out.println("");
+        for (int j = 0; j < a.length; j++) {
+            System.out.printf("%-15s", a[j]);
+        }       
+        System.out.println("");
+        for (int i = 0; i < nik.length; i++) {
+            if (gajiPokok[i] == b) {
                 System.out.printf("%-15s", nik[i]);
                 System.out.printf("%-15s", nama[i]);
                 System.out.printf("%-15s", gajiPokok[i]);
