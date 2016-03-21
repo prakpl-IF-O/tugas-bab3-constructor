@@ -30,6 +30,7 @@ public void Data(){
             }System.out.println();
         }System.out.println("\n");
     }
+//Mencetak NIK X
 public void Data(int Nik){
     System.out.println("----------------------------------------------------------------------------");
         System.out.println("\t                     **Data Karyawan X**");
@@ -44,6 +45,7 @@ public void Data(int Nik){
             }       
         }
 }
+//mencetak Gaji Pokok 1500
 public void Data(String Namee, int nilai){
     System.out.println("");
     System.out.println("----------------------------------------------------------------------------");
@@ -70,12 +72,47 @@ public void Data(String Namee, int nilai){
             }
         }System.out.println("\n");
 }
-public void Data(String Namee, int nilai, String a){
+//Mencetak tunjangan+denda
+public void Data(String Namee, int nilai, String operator){
     System.out.println("");
     System.out.println("----------------------------------------------------------------------------");
     System.out.println("\t              **Data Karyawan Tunjangan >=1000**");
     System.out.printf("%s %9s %17s %15s %12s %15s \n","Nik","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
-
+    int x = 0;
+        if("Gaji Pokok".equalsIgnoreCase(Namee)){
+            x=1;
+        }else if("Tunjangan".equalsIgnoreCase(Namee)){
+            x=2;
+        }else if("Bonus".equalsIgnoreCase(Namee)){
+            x=3;
+        }else if("Denda".equalsIgnoreCase(Namee)){
+            x=4;
+        }
+        switch (operator){
+            //Kurang dari
+            case "<":
+                for(int a=0;a<Nama.length;a++){
+                    if(DataGAJI[a][x]<nilai){
+                        System.out.print(DataGAJI[a][0]+"\t");
+                        System.out.print(Nama[a]+"\t\t");
+                        for (int s=1;s<5;s++){
+                            System.out.print(DataGAJI[a][s]+"\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
+                //Kurang dari sama dengan
+            case "<=":
+                for(int a=0;a<Nama.length;a++){
+                    if(DataGAJI[a][x]<=nilai){
+                        System.out.print(DataGAJI[a][0]+"\t");
+                        System.out.print(Nama[a]+"\t\t");
+                        for (int s=1;s<5;s++){
+                            System.out.print(DataGAJI[a][s]+"\t\t");
+                        }System.out.println();
+                    }
+                }
+                break;
 
 
 
@@ -86,6 +123,7 @@ public void Data(String Namee, int nilai, String a){
 
 
 
+}
 }
 
 
