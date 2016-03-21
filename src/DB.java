@@ -29,16 +29,27 @@ public class DB {
     }
 
     public void get() {
-   for(int x =0; x<urutan;x++){
-       System.out.println("NIK        : "+nik[x]);
-       System.out.println("nama       : "+nama[x]);
-       System.out.println("gaji pokok : "+g_pokok[x]);
-       System.out.println("tunjangan  : "+tunjangan[x]);
-       System.out.println("bonus      : "+bonus[x]);
-       System.out.println("denda      : "+denda[x]);
-       System.out.println("++--------------------------++");
-   } 
-   
-        
+        for (int x = 0; x < urutan; x++) {
+            System.out.println("NIK        : " + nik[x]);
+            System.out.println("nama       : " + nama[x]);
+            System.out.println("gaji pokok : " + g_pokok[x]);
+            System.out.println("tunjangan  : " + tunjangan[x]);
+            System.out.println("bonus      : " + bonus[x]);
+            System.out.println("denda      : " + denda[x]);
+            System.out.println("++--------------------------++");
+        }
+    }
+    
+    public void get(int nik1){
+        for (int a= 0 ; a<urutan;a++){
+            if (nik1 == nik[a]){
+               System.out.println("NIK        : " + nik[a]);
+            System.out.println("nama       : " + nama[a]);
+            System.out.println("gaji pokok : " + g_pokok[a]);
+            System.out.println("tunjangan  : " + tunjangan[a]);
+            System.out.println("bonus      : " + bonus[a]);
+            System.out.println("denda      : " + denda[a]);
+            }
+        }
     }
 }
