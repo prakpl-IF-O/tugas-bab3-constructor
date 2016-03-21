@@ -5,6 +5,7 @@ public class maindataBase {
         db.get();
         db.get(104);
         db.get("Tunjangan", 2000);
+        db.get("Tunjangan", "<=", 1000);
+        db.get("Bonus", ">", 450);
     }
-    
 }
