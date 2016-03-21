@@ -22,4 +22,30 @@ public class Database {
         this.denda = denda;
     }
 
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setNik(int nik) {
+        this.nik = nik;
+    }
+
+    public void setGajiPokok(int gajiPokok) {
+        this.gajiPokok = gajiPokok;
+    }
+
+    public void setTunjangan(int tunjangan) {
+        this.tunjangan = tunjangan;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
+
+    public void setDenda(int denda) {
+        this.denda = denda;
+    }
+
+    
+
 }
