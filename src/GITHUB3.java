@@ -19,19 +19,19 @@ public class GITHUB3 {
         pil = input.nextInt();
 
         if (pil == 1) {
-           
+           DbNIK();
         } else if (pil == 2) {
-            
+            DbNama();
         } else if (pil == 3) {
-            
+            DbGajiTotal();
         } else if (pil == 4) {
-            
+            DbGajiTunjangan();
         } else if (pil == 5) {
-            
+            DbBonus();
         } else if (pil == 6) {
-            
+            DbDenda();
         } else if (pil == 7) {
-           
+           Db();
         }
 
     }
