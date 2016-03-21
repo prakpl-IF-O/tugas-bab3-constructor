@@ -18,5 +18,9 @@ public class mainKaryawan {
         db.setObjecttoArray("Harry", 200, 2250, 110, 200, 1000);
 
         db.get();
+        System.out.println("List pe");
+        db.get(101);
+        System.out.println("List pegawai sesuai Keterangan : ");
+        db.get("Gaji Pokok", 500);
     }
 }
