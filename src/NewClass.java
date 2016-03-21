@@ -32,9 +32,42 @@ public class NewClass {
         this.denda = denda;
 
     }
+
+    public void getData() {
+
+    }
+
+    public int getNik() {
+        return nik;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public int getGajipokok() {
+        return gajipokok;
+    }
+
+    public int getTunjangan() {
+        return tunjangan;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public int getDenda() {
+        return denda;
+    }
     
-    public void getData(){
-        
+    public void Display(int i) {
+        System.out.println(data[i].getNik());
+        System.out.println(data[i].getNama());
+        System.out.println(data[i].getGajipokok());
+        System.out.println(data[i].getTunjangan());
+        System.out.println(data[i].getBonus());
+        System.out.println(data[i].getDenda());
     }
 
 }
