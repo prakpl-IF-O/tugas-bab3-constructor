@@ -120,6 +120,6 @@ public class data {
                     }
                 }
                 break;
-        }
+        }System.out.println("\n");
     }
 }

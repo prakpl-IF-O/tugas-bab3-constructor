@@ -5,7 +5,8 @@ public class dataMain {
         data d1 = new data();
         d1.get();
         d1.get(104);
-        d1.get("Gaji Pokok", 1750);
-        d1.get("Bonus",">",450);
+        d1.get("Gaji Pokok", 1500);
+        d1.get("Tunjangan",">=",1000);
+        d1.get("Denda",">",200);
     }
 }
