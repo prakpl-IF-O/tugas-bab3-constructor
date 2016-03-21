@@ -20,6 +20,7 @@ public class Database {
     int[] denda = {200, 200, 375, 200, 300, 250, 200, 300, 200, 200};
 
     public void get() {
+        System.out.println("@Mengambil semua data");
         for (int j = 0; j < a.length; j++) {
             System.out.printf("%-15s", a[j]);
         }
@@ -37,6 +38,7 @@ public class Database {
 
     public void get(int b) {
         System.out.println("");
+        System.out.println("@NIK = " + b);
         for (int j = 0; j < a.length; j++) {
             System.out.printf("%-15s", a[j]);
         }
@@ -53,15 +55,36 @@ public class Database {
             }
         }
     }
-        
+
     public void get(String c, int b) {
         System.out.println("");
+        System.out.println("@" + c + " = " + b);
         for (int j = 0; j < a.length; j++) {
             System.out.printf("%-15s", a[j]);
-        }       
+        }
         System.out.println("");
         for (int i = 0; i < nik.length; i++) {
             if (gajiPokok[i] == b) {
+                System.out.printf("%-15s", nik[i]);
+                System.out.printf("%-15s", nama[i]);
+                System.out.printf("%-15s", gajiPokok[i]);
+                System.out.printf("%-15s", tunjangan[i]);
+                System.out.printf("%-15s", bonus[i]);
+                System.out.printf("%-15s", denda[i]);
+                System.out.println("");
+            }
+        }
+    }
+
+    public void get(String c, String x, int b) {
+        System.out.println("");
+        System.out.println("@" + c + " " + x + " " + b);
+        for (int j = 0; j < a.length; j++) {
+            System.out.printf("%-15s", a[j]);
+        }
+        System.out.println("");
+        for (int i = 0; i < nik.length; i++) {
+            if (bonus[i] > b) {
                 System.out.printf("%-15s", nik[i]);
                 System.out.printf("%-15s", nama[i]);
                 System.out.printf("%-15s", gajiPokok[i]);
