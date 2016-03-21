@@ -7,7 +7,7 @@ public class datab {
     private int[] bonus = new int[10];
     private int[] denda = new int[10];
     int urut=0;
-    public void data(String nama_,int nik_, int gapok_, int tunjangan_, int bonus_, int denda_) {
+    public void data(int nik_,String nama_, int gapok_, int tunjangan_, int bonus_, int denda_) {
         nama[urut] = nama_;
         nik[urut] = nik_;
         gapok[urut] = gapok_;

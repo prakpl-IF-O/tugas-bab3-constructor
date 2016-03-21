@@ -11,3 +11,13 @@ public class main {
         db.data(108, "sutiman", 1500 , 1250 , 500 , 300 );
         db.data(109, "raja", 1000 , 1000 , 500 , 200 );
         db.data(110, "harry", 2250 , 1000 , 200 , 200 );
+         System.out.println("------Data------");
+    db.dapat();
+         System.out.println("-----------(109)------------");
+    db.dapat(109);
+         System.out.println("---(\"gaji pokok\", 1500)---");
+    db.dapat("gaji pokok", 1500);
+         System.out.println("---(\"denda\",\"<\", 200)---");
+    db.dapat("denda","<", 200);
+     } 
+}
