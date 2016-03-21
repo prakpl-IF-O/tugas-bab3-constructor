@@ -10,7 +10,7 @@
  */
 public class DATA_MAIN {
      public static void main(String[] args) {
+        DB db = new DB();
         
-          
     }
 }
