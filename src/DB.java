@@ -36,6 +36,7 @@ public class DB {
        System.out.println("tunjangan  : "+tunjangan[x]);
        System.out.println("bonus      : "+bonus[x]);
        System.out.println("denda      : "+denda[x]);
+       System.out.println("++--------------------------++");
    } 
    
         
