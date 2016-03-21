@@ -21,8 +21,13 @@ public class DATA_MAIN {
         db.pendataan(108, "sutiman", 1500 , 1250 , 500 , 300 );
         db.pendataan(109, "raja", 1000 , 1000 , 500 , 200 );
         db.pendataan(110, "harry", 2250 , 1000 , 200 , 200 );
+         System.out.println("------MEMUNCULKAN SEMUA DATA------");
     db.get();
+         System.out.println("-----------db.get(107)------------");
     db.get(107);
+         System.out.println("---db.get(\"gaji pokok\", 2000)---");
     db.get("gaji pokok", 2000);
+         System.out.println("---db.get(\"denda\",\"<\", 200)---");
+    db.get("denda","<", 200);
      } 
 }
