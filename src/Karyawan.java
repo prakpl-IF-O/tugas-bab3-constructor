@@ -70,6 +70,22 @@ public void Data(String Namee, int nilai){
             }
         }System.out.println("\n");
 }
+public void Data(String Namee, int nilai, String a){
+    System.out.println("");
+    System.out.println("----------------------------------------------------------------------------");
+    System.out.println("\t              **Data Karyawan Tunjangan >=1000**");
+    System.out.printf("%s %9s %17s %15s %12s %15s \n","Nik","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+
+
+
+
+
+
+}
+
+
+
+
 }
 
 
