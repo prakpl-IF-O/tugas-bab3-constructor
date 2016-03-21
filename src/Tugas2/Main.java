@@ -17,12 +17,12 @@ public class Main {
         String l = "Gaji", m = "Tunjangan", n = "Bonus", o = "Denda", 
                 a = ">", b = "<", c = ">=", d = "<=";
         for (int i = 0;; i++) {
-            System.out.println("MENU........");
-            System.out.println("1. Tampilkan seluruh data");
-            System.out.println("2. Tampilkan data berdasarkan ID");
-            System.out.println("3. Tampilkan data berdasarkan KOLOM dan VALUE");
-            System.out.println("4. Tampilkan data berdasarkan KOLOM, OPERATOR dan VALUE");
-            System.out.print("MASUKKAN PILIHAN...|| ");
+            System.out.println("========================= MENU =========================");
+            System.out.println("1. Tampilkan data karyawan");
+            System.out.println("2. Tampilkan data dari ID");
+            System.out.println("3. Tampilkan data dari KOLOM dan VALUE");
+            System.out.println("4. Tampilkan data dari KOLOM, OPERATOR dan VALUE");
+            System.out.print("Masukan pilihan anda :  ");
             int pilihan = in.nextInt();
             if (pilihan == 1) {
                 k.get();
@@ -77,7 +77,7 @@ public class Main {
                 int val = in.nextInt();
                 k.get(kol, op, val);
             } else {
-                System.err.println("Pilihan yang anda masukkan salah...");
+                System.err.println("Error");
                 break;
             }
         }
