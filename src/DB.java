@@ -39,17 +39,260 @@ public class DB {
             System.out.println("++--------------------------++");
         }
     }
-    
-    public void get(int nik1){
-        for (int a= 0 ; a<urutan;a++){
-            if (nik1 == nik[a]){
-               System.out.println("NIK        : " + nik[a]);
-            System.out.println("nama       : " + nama[a]);
-            System.out.println("gaji pokok : " + g_pokok[a]);
-            System.out.println("tunjangan  : " + tunjangan[a]);
-            System.out.println("bonus      : " + bonus[a]);
-            System.out.println("denda      : " + denda[a]);
+
+    public void get(int nik1) {
+        for (int a = 0; a < urutan; a++) {
+            if (nik1 == nik[a]) {
+                System.out.println("\nNIK        : " + nik[a]);
+                System.out.println("nama       : " + nama[a]);
+                System.out.println("gaji pokok : " + g_pokok[a]);
+                System.out.println("tunjangan  : " + tunjangan[a]);
+                System.out.println("bonus      : " + bonus[a]);
+                System.out.println("denda      : " + denda[a]);
             }
         }
     }
+
+    public void get(String katagori, int nilai) {
+        if (katagori == "gaji pokok") {
+            for (int b = 0; b < urutan; b++) {
+                if (g_pokok[b] == nilai) {
+                    System.out.println("\nNIK        : " + nik[b]);
+                    System.out.println("nama       : " + nama[b]);
+                    System.out.println("gaji pokok : " + g_pokok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }
+            }
+        }
+        if (katagori == "tunjangan") {
+            for (int b = 0; b < urutan; b++) {
+                if (tunjangan[b] == nilai) {
+                    System.out.println("\nNIK        : " + nik[b]);
+                    System.out.println("nama       : " + nama[b]);
+                    System.out.println("gaji pokok : " + g_pokok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }
+            }
+        }
+        if (katagori == "bonus") {
+            for (int b = 0; b < urutan; b++) {
+                if (bonus[b] == nilai) {
+                    System.out.println("\nNIK        : " + nik[b]);
+                    System.out.println("nama       : " + nama[b]);
+                    System.out.println("gaji pokok : " + g_pokok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }
+            }
+        }
+        if (katagori == "denda") {
+            for (int b = 0; b < urutan; b++) {
+                if (denda[b] == nilai) {
+                    System.out.println("\nNIK        : " + nik[b]);
+                    System.out.println("nama       : " + nama[b]);
+                    System.out.println("gaji pokok : " + g_pokok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }
+            }
+        }
+    }
+
+    public void get(String katagori, String operator, int nilai) {
+        if (katagori == "tunjangan") {
+            if (operator == ">") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai > tunjangan[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai < tunjangan[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai <= tunjangan[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai >= tunjangan[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            }
+        }
+        if (katagori == "gaji pokok") {
+            if (operator == ">") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai > g_pokok[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai < g_pokok[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai <= g_pokok[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai >= g_pokok[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            }
+        }
+    if (katagori == "bonus") {
+            if (operator == ">") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai > bonus[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai < bonus[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai <= bonus[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai >= bonus[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            }
+        }
+    if (katagori == "denda") {
+            if (operator == ">") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai > denda[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai < denda[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == "<=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai <= denda[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            } else if (operator == ">=") {
+                for (int b = 0; b < urutan; b++) {
+                    if (nilai >= denda[b]) {
+                        System.out.println("\nNIK        : " + nik[b]);
+                        System.out.println("nama       : " + nama[b]);
+                        System.out.println("gaji pokok : " + g_pokok[b]);
+                        System.out.println("tunjangan  : " + tunjangan[b]);
+                        System.out.println("bonus      : " + bonus[b]);
+                        System.out.println("denda      : " + denda[b]);
+                    }
+                }
+            }
+        }
+    }
+    
 }

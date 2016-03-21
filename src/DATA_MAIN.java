@@ -23,5 +23,6 @@ public class DATA_MAIN {
         db.pendataan(110, "harry", 2250 , 1000 , 200 , 200 );
     db.get();
     db.get(107);
+    db.get("gaji pokok", 2000);
      } 
 }
