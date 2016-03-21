@@ -21,7 +21,7 @@ public class Github {
        
       db.get();
       db.getId(104);
-      db.getF("gaji","<",200); //erorr
+      db.Get("gaji","<",200); 
       
       } 
          
