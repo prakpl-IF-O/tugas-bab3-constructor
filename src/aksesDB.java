@@ -40,25 +40,25 @@ public class aksesDB {
                     if(value == db[i].getGajiPokok()){
                         displayData(i);
                     }
-                }
+                }break;
             case "tunjangan":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getTunjangan()){
                         displayData(i);
                     }
-                }
+                }break;
             case "bonus":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getBonus()){
                         displayData(i);
                     }
-                }
+                }break;
             case "denda":
                 for (int i = 0; i < db.length; i++) {
                     if(value == db[i].getDenda()){
                         displayData(i);
                     }
-                }
+                }break;
             default:
         }
     }
