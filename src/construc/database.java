@@ -27,4 +27,13 @@ public class database {
         }
     }
 
+    public void get(int id) {
+        for (int i = 0; i < 10; i++) {
+            if (id == nik[i]) {
+                System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
+                System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+            }
+        }
+    }
+
  
