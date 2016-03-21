@@ -21,5 +21,6 @@ public class DATA_MAIN {
         db.pendataan(108, "sutiman", 1500 , 1250 , 500 , 300 );
         db.pendataan(109, "raja", 1000 , 1000 , 500 , 200 );
         db.pendataan(110, "harry", 2250 , 1000 , 200 , 200 );
-    }
+    db.get();
+     } 
 }
