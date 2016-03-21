@@ -154,7 +154,49 @@ public class Githuboverload2 {
                         }
                         break;
                 }
+                break;
+            case "Bonus":
+                switch (n) {
+                    case ">":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getBonus() > x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case ">=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getBonus() >= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getBonus() < x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getBonus() <= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getBonus() == x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
 
+                }
+                break;
         }
     }
+
 }
+
