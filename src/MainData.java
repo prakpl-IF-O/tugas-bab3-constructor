@@ -14,6 +14,7 @@ public class MainData {
         Database data = new Database();
         
         data.get();
+        data.get(104);
       
     }
    
