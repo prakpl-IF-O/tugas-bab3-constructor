@@ -21,7 +21,9 @@ public class Github {
        
       db.get();
       db.getId(104);
-      db.Get("gaji","<",200); 
+      db.Get("tunjangan",1000);
+      db.geT("tunjangan","<",1000); 
+      db.GET("gaji",">",500);
       
       } 
          

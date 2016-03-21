@@ -75,16 +75,34 @@ public class Maingithub {
      
          }
    }
-   void Get(String a,String n, int c){
+   void Get(String a,int b){
        
        System.out.println();
-       System.out.println("karyawan dengan tunjangan 200 "+karyawan9[1]);
+       System.out.println("karyawan dengan tunjangan 1000 "+karyawan9[1]);
        
    }
    void geT (String a,String b,int c){
-       System.out.println();
-       System.out.println();
+           if (a==  "< : 1000")
+        
+        for (int i=0; i<karyawan2.length; i++){
+            System.out.println(karyawan2[i]);}
+        for (int i=0; i<karyawan4.length; i++){
+            System.out.println(karyawan4[i]);}
+        for (int i=0; i<karyawan5.length; i++){
+            System.out.println(karyawan5[i]);}
+        for (int i=0; i<karyawan6.length; i++){
+            System.out.println(karyawan6[i]);  }      
+       System.out.println("");
            
+   }
+   void GET (String a,String b,int c){
+         System.out.println();
+        for (int i=0; i<karyawan4.length; i++){
+            System.out.println(karyawan4[i]);}
+        for (int i=0; i<karyawan5.length; i++){
+            System.out.println(karyawan5[i]);}
+           
+       System.out.println("");
    }
 }
    
