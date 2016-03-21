@@ -25,6 +25,25 @@ public class main {
         System.out.println("4. Keluar");
         System.out.print("Pilih : ");
         menu=masukan.nextInt();
-        
-    }
+       
+        switch(menu){
+            case 1:
+                System.out.println("");
+                db.get(); break;
+            case 2:
+                System.out.println("");
+                System.out.println("Masukan Pilihan");
+                System.out.println("1. gaji Pokok");
+                System.out.println("2. Tunjangan");
+                System.out.println("3. Bonus");
+                System.out.println("4. Denda");
+                System.out.print("Pilih : ");
+                menus=masukan.next();
+                System.out.print("Masukan batas angka : ");
+                batas=masukan.nextInt();
+                db.get(menus, batas); break;
+
 }
+}        
+    
+
