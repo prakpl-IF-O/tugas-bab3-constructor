@@ -37,11 +37,11 @@ public class Tugas_3 {
         System.out.printf("%s %9s %17s %15s %12s %15s \n", "Nik", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
 
         for (int a = 0; a < Nama.length; a++) {
-            System.out.print(gaji[a][0]);
-            System.out.print(Nama[a]);
+            System.out.print(gaji[a][0] + "\t");
+            System.out.print(Nama[a] + "\t\t");
 
             for (int s = 1; s < 5; s++) {
-                System.out.print(gaji[a][s]);
+                System.out.print(gaji[a][s] + "\t\t");
             }
             System.out.println();
         }
@@ -53,12 +53,12 @@ public class Tugas_3 {
         System.out.println("Data Karyawan dengan NIK X");
         for (int a = 0; a < Nama.length; a++) {
             if (Nik == gaji[a][0]) {
-                System.out.println("Nik        : " + gaji[a][0]+"\t");
-                System.out.println("Nama       : " + Nama[a]+"\t");
-                System.out.println("Gaji Pokok : " + gaji[a][1]+"\t");
-                System.out.println("Tunjangan  : " + gaji[a][2]+"\t");
-                System.out.println("Bonus      : " + gaji[a][3]+"\t");
-                System.out.println("Denda      : " + gaji[a][4]+"\t");
+                System.out.println("Nik        : " + gaji[a][0]);
+                System.out.println("Nama       : " + Nama[a]);
+                System.out.println("Gaji Pokok : " + gaji[a][1]);
+                System.out.println("Tunjangan  : " + gaji[a][2]);
+                System.out.println("Bonus      : " + gaji[a][3]);
+                System.out.println("Denda      : " + gaji[a][4]);
             }
         }
     }
@@ -110,10 +110,10 @@ public class Tugas_3 {
             case "<":
                 for (int a = 0; a < Nama.length; a++) {
                     if (gaji[a][x] < nilai) {
-                        System.out.print(gaji[a][0]);
-                        System.out.print(Nama[a]);
+                        System.out.print(gaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
                         for (int s = 1; s < 5; s++) {
-                            System.out.print(gaji[a][s]);
+                            System.out.print(gaji[a][s] + "\t\t");
                         }
 
                     }
@@ -123,9 +123,10 @@ public class Tugas_3 {
             case "<=":
                 for (int a = 0; a < Nama.length; a++) {
                     if (gaji[a][x] <= nilai) {
-                        System.out.print(gaji[a][0]);
-                        System.out.print(Nama[a]);
+                        System.out.print(gaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
                         for (int s = 1; s < 5; s++) {
+                            System.out.print(gaji[a][s] + "\t\t");
                         }
                         System.out.println();
                     }
@@ -135,23 +136,22 @@ public class Tugas_3 {
             case ">":
                 for (int a = 0; a < Nama.length; a++) {
                     if (gaji[a][x] > nilai) {
-                        System.out.print(gaji[a][0]);
-                        System.out.print(Nama[a]);
+                        System.out.print(gaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
                         for (int s = 1; s < 5; s++) {
-                            System.out.print(gaji[a][s]);
+                            System.out.print(gaji[a][s]+"\t\t");
                         }
                         System.out.println();
                     }
                 }
                 break;
-            ////lebih dari sama dengan
             case ">=":
                 for (int a = 0; a < Nama.length; a++) {
                     if (gaji[a][x] >= nilai) {
-                        System.out.print(gaji[a][0]);
-                        System.out.print(Nama[a]);
+                        System.out.print(gaji[a][0]+"\t");
+                        System.out.print(Nama[a]+"\t\t");
                         for (int s = 1; s < 5; s++) {
-                            System.out.print(gaji[a][s]);
+                            System.out.print(gaji[a][s]+"\t\t");
                         }
                         System.out.println();
                     }
