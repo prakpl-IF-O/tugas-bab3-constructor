@@ -22,14 +22,13 @@ public class Data {
         System.out.println("===========================================================");
         System.out.println("                       DATA KARYAWAN                      ");
         System.out.println("===========================================================");
-        System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
-        for (int i=0; i<nik.length; i++){
-            System.out.printf("%-7d %-8s %-8d %-13d %-9d", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
-            System.out.println(" ");
+        for (int i = 0; i < 10; i++) {
+             System.out.print("NIK     NAMA     GAJI     TUNJANGAN     BONUS     DENDA\n");
+            System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
+            System.out.println("-------------------------------------------------------------");
         }
-        System.out.println("===========================================================");
-        System.out.println(" ");
-}
+        System.out.println("");
+     }
       public void get(int id) {
         System.out.println("===========================================================");
         System.out.println("                    DATA NIK " + id + "                     ");
@@ -49,20 +48,20 @@ public class Data {
         if (columnName == "Gaji Pokok"){
             System.out.println("             KARYAWAN DENGAN GAJI POKOK : " +value);
             System.out.println("==========================================================");
-            System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+            System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
             for (int i=0; i<gajiPokok.length; i++){
                 if ( value == gajiPokok[i]){
-                System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
-                } else if (value > 2500){ System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","-","-","-","-","-","-");break; 
-                } else if (value < 2000){ System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","-","-","-","-","-","-");break;}
+                System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                } else if (value > 2500){ System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n","-","-","-","-","-","-");break; 
+                } else if (value < 2000){ System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n","-","-","-","-","-","-");break;}
             } 
 } else if (columnName == "Tunjangan"){
             System.out.println("        KARYAWAN YANG MENDAPAT TUNJANGAN : " +value);
             System.out.println("==========================================================");
-            System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+            System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n","NIK","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
             for (int i=0; i<tunjangan.length; i++){
                 if ( value == tunjangan[i]){
-                System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
+                System.out.printf("%-7d%-13s%-12d%-12d%-10d%-6d\n", nik[i],nama[i],gajiPokok[i],tunjangan[i],bonus[i],denda[i]);
                 } else if ( value > 1250 ){ System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","-","-","-","-","-","-");break;  
                 } else if ( value < 350) { System.out.printf("%-7d %-8s %-8d %-13d %-9d %d\n","-","-","-","-","-","-");break; }
             } 
