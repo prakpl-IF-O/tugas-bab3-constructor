@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Fariz
  */
 public class Tugas3 {
      public static void main(String[] args) {
-            public static void main(String[] args) {
-    ClassBaru x1 = new ClassBaru();
+         ClassBaru x1 = new ClassBaru();
     x1.masukData("101","paijo",2000,1000,500,200);
     x1.masukData("102","Lala",1750,900,500,200);
     x1.masukData("103","Lulu",2150,1000,300,375);
@@ -30,5 +28,3 @@ public class Tugas3 {
     }
     
     }
-    
-}
