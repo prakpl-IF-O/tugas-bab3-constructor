@@ -1,9 +1,10 @@
 package BAB3;
 
 public class OMC {
-    public void awal(){
-        String [][] dataawal ={
-            {"NIK", "Nama"   , "Gaji Pokok", "Tunjangan" , "Bonus", "Denda"},
+    public void get(){
+        System.out.println("\t\t\tKESELURUHAN DATA");
+        String dataawal[][] = {
+            {"NIK", "Nama", "Gaji Pokok", "Tunjangan" , "Bonus", "Denda"}, 
             {"101", "Paijo"  ,    "2000"   ,    "1000"   , "500"  , "200"},
             {"102", "Lala"   ,    "1750"   ,    "900"    , "500"  , "200"},
             {"103", "Lulu"   ,    "2150"   ,    "1000"   , "300"  , "375"},
@@ -15,15 +16,14 @@ public class OMC {
             {"109", "Raja"   ,    "1000"   ,    "1000"   , "500"  , "200"},
             {"110", "Harry"  ,    "2250"   ,    "1000"   , "200"  , "200"},
         };
-                System.out.println("\tKESELURUHAN DATA");
-            //mendeklarasikan baris dan kolom
-            int y,z;
-            for (y = 0 ; y < 11 ; y++){
-                for(z = 0 ; z < 6 ; z++){
-                    System.out.print(dataawal[y][z] + ",");
+            int a, b;
+                for (a = 0; a < 11 ; a++) {
+                    System.out.println("________________________________________________________________________________");
+                    for (b = 0; b < 6; b++) {
+                        System.out.printf("%-14s ", dataawal[a][b]);
+                    }
+                        System.out.println();
                 }
-                    System.out.println(" ");
-            }
-        }   
+    }
 }
 
