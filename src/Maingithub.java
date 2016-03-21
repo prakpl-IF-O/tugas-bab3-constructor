@@ -68,15 +68,16 @@ public class Maingithub {
             System.out.println(karyawan10[i]);
     }
     }
-   void getId (){
+   void getId (int id){
        System.out.println("");
          for (int i=0; i<karyawan4.length; i++){
             System.out.println(karyawan4[i]);
      
          }
    }
-   void Gett(){
-        
+   void Get(String a,String n, int c){
+       
+       
    }
 }
    
