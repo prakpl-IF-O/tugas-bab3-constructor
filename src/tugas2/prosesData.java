@@ -51,4 +51,101 @@ public class prosesData {
             }
         }
     }
+
+    public void get(String ColumnName, String Operator, int point) {
+        for (Karyawan status2 : listkaryawan) {
+            if (ColumnName.equals("Gaji Pokok")) {
+                if (Operator.equals("<")) {
+                    if (point > status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">")) {
+                    if (point < status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">=")) {
+                    if (point <= status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals("<=")) {
+                    if (point >= status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                }
+            }
+            if (ColumnName.equals("Gaji Pokok")) {
+                if (Operator.equals("<")) {
+                    if (point > status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">")) {
+                    if (point < status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">=")) {
+                    if (point <= status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals("<=")) {
+                    if (point >= status2.getGajiPokok()) {
+                        status2.tampilData();
+                    }
+                }
+            } else if (ColumnName.equals("Tunjangan")) {
+                if (Operator.equals("<")) {
+                    if (point > status2.getTunjangan()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">")) {
+                    if (point < status2.getTunjangan()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">=")) {
+                    if (point <= status2.getTunjangan()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals("<=")) {
+                    if (point >= status2.getTunjangan()) {
+                        status2.tampilData();
+                    }
+                }
+            } else if (ColumnName.equals("Bonus")) {
+                if (Operator.equals("<")) {
+                    if (point > status2.getBonus()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">")) {
+                    if (point < status2.getBonus()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">=")) {
+                    if (point <= status2.getBonus()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals("<=")) {
+                    if (point >= status2.getBonus()) {
+                        status2.tampilData();
+                    }
+                }
+            } else if (ColumnName.equals("Denda")) {
+                if (Operator.equals("<")) {
+                    if (point > status2.getDenda()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">")) {
+                    if (point < status2.getDenda()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals(">=")) {
+                    if (point <= status2.getDenda()) {
+                        status2.tampilData();
+                    }
+                } else if (Operator.equals("<=")) {
+                    if (point >= status2.getDenda()) {
+                        status2.tampilData();
+                    }
+                }
+            }
+        }
+    }
 }

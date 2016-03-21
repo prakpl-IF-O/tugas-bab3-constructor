@@ -21,6 +21,8 @@ public class mainKaryawan {
         System.out.println("List pe");
         db.get(101);
         System.out.println("List pegawai sesuai Keterangan : ");
-        db.get("Gaji Pokok", 500);
+        db.get("Gaji Pokok", 1500);
+        System.out.println("List pegawai sesuai Operator : ");
+        db.get("Denda", "<", 500);
     }
 }
