@@ -18,6 +18,9 @@ public class MainDatabase {
         db.get(109);
         System.out.println("Menampilkan Data Dengan Gaji 2000");
         db.get("gaji pokok",2000);
-        
+        System.out.println("Menampilkan Data Dengan Tunjangan <= 1000");
+        db.get("Tunjangan","<=",1000);
+        System.out.println("Menampilkan Data Dengan Bonus > 450");
+        db.get("bonus",">",450);
     }
 }
