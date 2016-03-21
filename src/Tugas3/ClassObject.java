@@ -19,4 +19,12 @@ public class ClassObject {
     this.bonus=Bonus;
     this.denda=Denda; 
     }
+    public void Display(){
+        System.out.println("NIk= "+nik);
+        System.out.println("Nama= "+nama);
+        System.out.println("GajiPokok= "+gaji_pokok);
+        System.out.println("Tunjangan"+tunjangan);
+        System.out.println("Bonus"+bonus);
+        System.out.println("Denda"+denda);
+    }
 }
