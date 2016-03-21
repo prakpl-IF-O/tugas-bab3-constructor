@@ -42,7 +42,6 @@ public class data {
                     System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
                 }
             }
-        }
 
         if (columnName.equals("2")) {
             System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
@@ -71,7 +70,7 @@ public class data {
             }
         }
     }
-    
+    }
     public void get(String columnName, String operator, int value) {
         if (columnName.equals("1")) {
             if(operator.equals("<")){
@@ -132,82 +131,6 @@ public class data {
                 }
             }
         }
-            if(operator.equals(">=")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (tunjangan[i] >= value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-    }
-        if (columnName.equals("3")) {
-            if(operator.equals("<")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (bonus[i] < value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals("<=")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (bonus[i] <= value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals(">")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (bonus[i] > value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals(">=")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (bonus[i] >= value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-    }
-        if (columnName.equals("4")) {
-            if(operator.equals("<")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (denda[i] < value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals("<=")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (denda[i] <= value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals(">")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (denda[i] > value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-            if(operator.equals(">=")){
-            System.out.println("NIK     NAMA    GajiPokok   Tunjangan   Bonus   Denda");
-            for (int i = 0; i < 10; i++) {
-                if (denda[i] >= value) {
-                    System.out.printf("%-7d %-9s %-11d %-10d %-8d %d\n", nik[i], nama[i], gajiPokok[i], tunjangan[i], bonus[i], denda[i]);
-                }
-            }
-        }
-    }
+
 }
 }
