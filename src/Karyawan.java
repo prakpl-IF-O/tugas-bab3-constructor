@@ -15,34 +15,49 @@ public class Karyawan {
         {110, 2250, 1000, 200, 200}
     };
     //Menambah method get untuk semua data
-public void get(){
+public void Data(){
     System.out.println("\t                 **Semua Data Karyawan**");
     System.out.println("");
     System.out.printf("%s %9s %17s %15s %12s %15s \n",
-    "NO","Nik","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+            "Nik","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
     //Nama
-        for(int i=0;i<Nama.length;i++){
-            System.out.print(DataGAJI[i][0]+"\t");
-            System.out.print(Nama[i]+"\t\t");
+        for(int a=0;a<Nama.length;a++){
+            System.out.print(DataGAJI[a][0]+"\t");
+            System.out.print(Nama[a]+"\t\t");
     //Data Gaji
-        for (int j=1;j<5;j++){
-                System.out.print(DataGAJI[i][j]+"\t\t");
+        for (int s=1;s<5;s++){
+                System.out.print(DataGAJI[a][s]+"\t\t");
             }System.out.println();
         }System.out.println("\n");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+public void Data(int Nik){
+    System.out.println("----------------------------------------------------------------------------");
+        System.out.println("\t                     **Data Karyawan X**");
+        for(int a=0;a<Nama.length;a++){
+            if(Nik==DataGAJI[a][0]){
+                System.out.println("Nik\t\t     : "+DataGAJI[a][0]);
+                System.out.println("Nama\t\t     : "+Nama[a]);
+                System.out.println("Gaji Pokok\t     : "+DataGAJI[a][1]);
+                System.out.println("Tunjangan\t     : "+DataGAJI[a][2]);
+                System.out.println("bonus\t\t     : "+DataGAJI[a][3]);
+                System.out.println("denda\t\t     : "+DataGAJI[a][4]);
+            }
+        }
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
