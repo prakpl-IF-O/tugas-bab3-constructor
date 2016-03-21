@@ -10,7 +10,31 @@ public class Pegawai {
     double[]bonuss={500,500,300,600,500,450,500,500,500,200};
     double[]dendaa={200,200,375,200,300,250,200,300,200,200};
     
-    
+    public Pegawai(){
+        for(int i=0;i<10;i++){
+            System.out.println("nik :"+nik1[i]);
+            System.out.println("nama :"+nama1[i]);
+            System.out.println("gaji pokok :"+gajip[i]);
+            System.out.println("tunjangan :"+tun[i]);
+            System.out.println("bonus :"+bonuss[i]);
+            System.out.println("denda :"+dendaa[i]);
+            System.out.println("=============");
+        }
+    }
+        public Pegawai(int id){
+            for(int i=0;i<10;i++){
+            if(id==nik1[i]){
+                System.out.println("nik :"+nik1[i]);
+                System.out.println("nama :"+nama1[i]);
+                System.out.println("gaji pokok :"+gajip[i]);
+                System.out.println("tunjangan :"+tun[i]);
+                System.out.println("bonus :"+bonuss[i]);
+                System.out.println("denda :"+dendaa[i]);
+            }
+        
+                }
+            public Pegawai()
+    }
 
 }
             
