@@ -15,4 +15,28 @@ public class data {
         bonus[urut] = bonus_;
         denda[urut] = denda_;
         urut++;
+    }
+public void dapat() {
+        for (int x = 0; x < urut; x++) {
+            System.out.println("nama       : " + nama[x]);
+            System.out.println("NIK        : " + nik[x]);
+            System.out.println("gaji pokok : " + gapok[x]);
+            System.out.println("tunjangan  : " + tunjangan[x]);
+            System.out.println("bonus      : " + bonus[x]);
+            System.out.println("denda      : " + denda[x]);
+            System.out.println("++----------------------++");
+        }
+    }
+
+    public void dapat(int nik_) {
+        for (int a = 0; a < urut; a++) {
+            if (nik_ == nik[a]) {
+                System.out.println("\nnama       : " + nama[a]);
+                System.out.println("NIK        : " + nik[a]);
+                System.out.println("gaji pokok : " + gapok[a]);
+                System.out.println("tunjangan  : " + tunjangan[a]);
+                System.out.println("bonus      : " + bonus[a]);
+                System.out.println("denda      : " + denda[a]);
+            }
+        }
     }}
