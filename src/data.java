@@ -24,7 +24,7 @@ public void dapat() {
             System.out.println("tunjangan  : " + tunjangan[x]);
             System.out.println("bonus      : " + bonus[x]);
             System.out.println("denda      : " + denda[x]);
-            System.out.println("++----------------------++");
+            System.out.println("==========================");
         }
     }
 
@@ -39,4 +39,45 @@ public void dapat() {
                 System.out.println("denda      : " + denda[a]);
             }
         }
-    }}
+    }
+public void dapat(String kategori, int nilai) {
+            if (kategori == "gaji pokok") {
+            for (int b = 0; b < urut; b++) {
+                if (gapok[b] == nilai) {
+                    System.out.println("\nnama       : " + nama[b]);
+                    System.out.println("NIK        : " + nik[b]);
+                    System.out.println("gaji pokok : " + gapok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }}}
+            if (kategori == "tunjangan") {
+            for (int b = 0; b < urut; b++) {
+                if (tunjangan[b] == nilai) {
+                    System.out.println("\nnama       : " + nama[b]);
+                    System.out.println("NIK        : " + nik[b]);
+                    System.out.println("gaji pokok : " + gapok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }}}
+            if (kategori == "bonus") {
+            for (int b = 0; b < urut; b++) {
+                if (bonus[b] == nilai) {
+                    System.out.println("\nnama       : " + nama[b]);
+                    System.out.println("NIK        : " + nik[b]);
+                    System.out.println("gaji pokok : " + gapok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }}}
+            if (kategori == "denda") {
+            for (int b = 0; b < urut; b++) {
+                if (denda[b] == nilai) {
+                    System.out.println("\nnama       : " + nama[b]);
+                    System.out.println("NIK        : " + nik[b]);
+                    System.out.println("gaji pokok : " + gapok[b]);
+                    System.out.println("tunjangan  : " + tunjangan[b]);
+                    System.out.println("bonus      : " + bonus[b]);
+                    System.out.println("denda      : " + denda[b]);
+                }}}}}
