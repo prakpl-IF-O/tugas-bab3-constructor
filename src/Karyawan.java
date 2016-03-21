@@ -46,9 +46,32 @@ public void Data(int Nik){
 }
 public void Data(String Namee, int nilai){
     System.out.println("");
-        
-        }
+    System.out.println("----------------------------------------------------------------------------");
+    System.out.println("\t              **Data Karyawan Gaji 1500**");
+    System.out.printf("%s %9s %17s %15s %12s %15s \n","Nik","Nama","Gaji Pokok","Tunjangan","Bonus","Denda");
+    //Tambahan    
+    int p = 0;
+        if("Gaji Pokok".equalsIgnoreCase(Namee)){
+            p=1;
+        }else if("Tunjangan".equalsIgnoreCase(Namee)){
+            p=2;
+        }else if("Bonus".equalsIgnoreCase(Namee)){
+            p=3;
+        }else if("Denda".equalsIgnoreCase(Namee)){
+            p=4;
 }
+        for(int a=0;a<Nama.length;a++){
+            if(nilai==DataGAJI[a][p]){
+                System.out.print(DataGAJI[a][0]+"\t");
+                System.out.print(Nama[a]+"\t\t");
+                for (int s=1;s<5;s++){
+                    System.out.print(DataGAJI[a][s]+"\t\t");
+                }System.out.println();
+            }
+        }System.out.println("\n");
+}
+}
+
 
 
 
