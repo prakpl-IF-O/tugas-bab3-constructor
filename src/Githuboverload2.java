@@ -195,6 +195,47 @@ public class Githuboverload2 {
 
                 }
                 break;
+            case "Gajipokok":
+                switch (n) {
+                    case ">":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getGajipokok()> x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case ">=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getGajipokok() >= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getGajipokok() < x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "<=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getGajipokok() <= x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    case "=":
+                        for (int i = 0; i < go.length; i++) {
+                            if (go[i].getGajipokok() == x) {
+                                go[i].display();
+                            }
+                        }
+                        break;
+                    default:
+                }
+                break;
+            default:
         }
     }
 
