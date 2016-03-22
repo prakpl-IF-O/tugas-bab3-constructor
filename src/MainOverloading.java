@@ -19,7 +19,7 @@ public class MainOverloading {
         dataBase db = new dataBase();
         db.get();
         db.get(103);
-        db.get("Gaji", 2000);
+        db.get("Gaji Pokok", 2000);
         db.get("Tunjangan", "<=", 1000);
         db.get("Bonus", ">", 450);
         db.get("Denda", ">", 200);
