@@ -109,270 +109,271 @@ public class dataBase {
         if (x == "Gaji Pokok") {
             if (y == ">") {
                 for (int i = 0; i < gajiPokok.length; i++) {
-                    if (gajiPokok[i] > z)
-              System.out.println("DATA KARYAWAN DENGAN GAJI POKOK "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-           else if (y == "<") {
-                for (int i = 0; i < gajiPokok.length; i++) {
-                    if (gajiPokok[i] < z)
-              System.out.println("DATA KARYAWAN DENGAN GAJI POKOK "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "<=") {
-                for (int i = 0; i < gajiPokok.length; i++) {
-                    if (gajiPokok[i] <= z)
-              System.out.println("DATA KARYAWAN DENGAN GAJI POKOK "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == ">=") {
-                for (int i = 0; i < gajiPokok.length; i++) {
-                    if (gajiPokok[i] >= z)
-               System.out.println("DATA KARYAWAN DENGAN GAJI POKOK "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "=") {
-                for (int i = 0; i < gajiPokok.length; i++) {
-                    if (gajiPokok[i] == z)
-               System.out.println("DATA KARYAWAN DENGAN GAJI POKOK "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-    }
-       else if (x == "Tunjangan") {
-            if (y == ">") {
-                for (int i = 0; i < tunjangan.length; i++) {
-                    if (tunjangan[i] > z)
-                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-           else if (y == "<") {
-                for (int i = 0; i < tunjangan.length; i++) {
-                    if (tunjangan[i] < z)
-                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "<=") {
-                for (int i = 0; i < tunjangan.length; i++) {
-                    if (tunjangan[i] <= z)
-               System.out.println("DATA KARYAWAN DENGAN TUNJANGAN "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == ">=") {
-                for (int i = 0; i < tunjangan.length; i++) {
-                    if (tunjangan[i] >= z)
-               System.out.println("DATA KARYAWAN DENGAN TUNJANGAN "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "=") {
-                for (int i = 0; i < tunjangan.length; i++) {
-                    if (tunjangan[i] == z)
-                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-    }
-else if (x == "Bonus") {
-            if (y == ">") {
-                for (int i = 0; i < bonus.length; i++) {
-                    if (bonus[i] > z)
-                System.out.println("DATA KARYAWAN DENGAN BONUS "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-           else if (y == "<") {
-                for (int i = 0; i < bonus.length; i++) {
-                    if (bonus[i] < z)
-                System.out.println("DATA KARYAWAN DENGAN BONUS "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "<=") {
-                for (int i = 0; i < bonus.length; i++) {
-                    if (bonus[i] <= z)
-                System.out.println("DATA KARYAWAN DENGAN BONUS "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == ">=") {
-                for (int i = 0; i < bonus.length; i++) {
-                    if (bonus[i] >= z)
-                System.out.println("DATA KARYAWAN DENGAN BONUS "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "=") {
-                for (int i = 0; i < bonus.length; i++) {
-                    if (bonus[i] == z)
-                System.out.println("DATA KARYAWAN DENGAN BONUS "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-    }
-      else if (x == "Denda") {
-            if (y == ">") {
-                for (int i = 0; i < denda.length; i++) {
-                    if (denda[i] > z)
-                System.out.println("DATA KARYAWAN DENGAN DENDA "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-           else if (y == "<") {
-                for (int i = 0; i < denda.length; i++) {
-                    if (denda[i] < z)
-                System.out.println("DATA KARYAWAN DENGAN DENDA "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "<=") {
-                for (int i = 0; i < denda.length; i++) {
-                    if (denda[i] <= z)
-                System.out.println("DATA KARYAWAN DENGAN DENDA "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == ">=") {
-                for (int i = 0; i < denda.length; i++) {
-                    if (denda[i] >= z)
-                System.out.println("DATA KARYAWAN DENGAN DENDA "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
-                System.out.println("");
-            }
-        }
-            else if (y == "=") {
-                for (int i = 0; i < denda.length; i++) {
-                    if (denda[i] == z)
-                System.out.println("DATA KARYAWAN DENGAN DENDA "  + y+" " + z);
-                System.out.println("Nik\t\t: " + nik[i]);
-                System.out.println("Nama\t\t: " + nama[i]);
-                System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
-                System.out.println("Tunjangan\t: " + tunjangan[i]);
-                System.out.println("Bonus\t\t: " + bonus[i]);
-                System.out.println("denda\t\t: " + denda[i]);
+                    if (gajiPokok[i] > z) {
+                        System.out.println("DATA KARYAWAN DENGAN GAJI POKOK " + y + " " + z);
+                    }
+                    System.out.println("Nik\t\t: " + nik[i]);
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
                     System.out.println("");
+                }
+            } else if (y == "<") {
+                System.out.println("DATA KARYAWAN DENGAN GAJI POKOK " + y + " " + z);
+                for (int i = 0; i < gajiPokok.length; i++) {
+                    if (gajiPokok[i] < z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<=") {
+                System.out.println("DATA KARYAWAN DENGAN GAJI POKOK " + y + " " + z);
+                for (int i = 0; i < gajiPokok.length; i++) {
+                    if (gajiPokok[i] <= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == ">=") {
+                System.out.println("DATA KARYAWAN DENGAN GAJI POKOK " + y + " " + z);
+                for (int i = 0; i < gajiPokok.length; i++) {
+                    if (gajiPokok[i] >= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "=") {
+                System.out.println("DATA KARYAWAN DENGAN GAJI POKOK " + y + " " + z);
+                for (int i = 0; i < gajiPokok.length; i++) {
+                    if (gajiPokok[i] == z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            }
+        } else if (x == "Tunjangan") {
+            System.out.println("DATA KARYAWAN DENGAN TUNJANGAN " + y + " " + z);
+            if (y == ">") {
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] > z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<") {
+                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN " + y + " " + z);
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] < z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<=") {
+                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN " + y + " " + z);
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] <= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == ">=") {
+                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN " + y + " " + z);
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] >= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "=") {
+                System.out.println("DATA KARYAWAN DENGAN TUNJANGAN " + y + " " + z);
+                for (int i = 0; i < tunjangan.length; i++) {
+                    if (tunjangan[i] == z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            }
+        } else if (x == "Bonus") {
+            System.out.println("DATA KARYAWAN DENGAN BONUS " + y + " " + z);
+            if (y == ">") {
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] > z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<") {
+                System.out.println("DATA KARYAWAN DENGAN BONUS " + y + " " + z);
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] < z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<=") {
+                System.out.println("DATA KARYAWAN DENGAN BONUS " + y + " " + z);
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] <= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == ">=") {
+                System.out.println("DATA KARYAWAN DENGAN BONUS " + y + " " + z);
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] >= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "=") {
+                System.out.println("DATA KARYAWAN DENGAN BONUS " + y + " " + z);
+                for (int i = 0; i < bonus.length; i++) {
+                    if (bonus[i] == z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            }
+        } else if (x == "Denda") {
+            System.out.println("DATA KARYAWAN DENGAN DENDA " + y + " " + z);
+            if (y == ">") {
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] > z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<") {
+                System.out.println("DATA KARYAWAN DENGAN DENDA " + y + " " + z);
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] < z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "<=") {
+                System.out.println("DATA KARYAWAN DENGAN DENDA " + y + " " + z);
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] <= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == ">=") {
+                System.out.println("DATA KARYAWAN DENGAN DENDA " + y + " " + z);
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] >= z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
+            } else if (y == "=") {
+                System.out.println("DATA KARYAWAN DENGAN DENDA " + y + " " + z);
+                for (int i = 0; i < denda.length; i++) {
+                    if (denda[i] == z) {
+                        System.out.println("Nik\t\t: " + nik[i]);
+                    }
+                    System.out.println("Nama\t\t: " + nama[i]);
+                    System.out.println("Gaji Pokok\t: " + gajiPokok[i]);
+                    System.out.println("Tunjangan\t: " + tunjangan[i]);
+                    System.out.println("Bonus\t\t: " + bonus[i]);
+                    System.out.println("denda\t\t: " + denda[i]);
+                    System.out.println("");
+                }
             }
         }
-    }  
-}
+    }
 }
